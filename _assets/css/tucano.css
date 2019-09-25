@@ -41,6 +41,7 @@
     background-image: url(../img/home/remow_litu-img--home__head.jpg);
     background-size: 100%;
     background-position: center top;
+    background-attachment: fixed;
 }
 
 #head .mdc-layout-grid__inner {
