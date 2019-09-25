@@ -16,9 +16,80 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
         
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap"
+              rel="stylesheet">
+        
+        <!-- CSS -->
+        <link href="_assets/css/nativo.css"
+              rel="stylesheet">
+        <link href="_assets/css/mdc.css"
+              rel="stylesheet">
+        <link href="_assets/css/tucano.css"
+              rel="stylesheet">
+        
     </head>
     
-    <body>
+    <body class="mdc-typography"
+          id="home">
+        
+        <!-- MENU -->
+        <div class="litu-menu"
+             id="menu">
+            <a class="mdc-button mdc-button--raised litu-menu__logo"
+               href="#head">
+                <img src="_assets/img/remow_litu-img--logo__color.svg" />
+            </a>
+            <div class="mdc-button mdc-button--raised litu-menu__nav">
+                <i class="material-icons">menu</i>
+            </div>
+            <div class="mdc-button mdc-button--raised litu-menu__contato">
+                <i class="material-icons">share</i>
+            </div>
+        </div>
+        
+        <!-- HEAD -->
+        <div class="mdc-layout-grid"
+             id="head">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5">
+                    <h1 class="mdc-typography--headline2 mdc-theme--text-primary-on-dark">
+                        EMBALAGENS PERSONALIZADAS
+                    </h1>
+                    <p class="mdc-typography--subtitle1 mdc-theme--text-secondary-on-dark">
+                        Das ideias, ao desenvolvimento de metéria-prima, criação e produção.
+                    </p>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+            </div>
+        </div>
+        
+        <!-- QUEM SOMOS -->
+        <div class="mdc-layout-grid"
+             id="home-quem-somos">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"
+                     id="title">
+                    <h2 class="mdc-typography--headline2">
+                        QUEM SOMOS
+                    </h2>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                    <p class="mdc-typography--body1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in est a velit auctor tristique in nec nisi. Ut gravida sem cursus tincidunt imperdiet. Suspendisse vehicula libero eu mi cursus auctor ut et quam. Nulla pulvinar sodales enim sed fermentum. Nam ultrices felis lacus, at viverra nisl tincidunt nec.
+                    </p>
+                    <button class="mdc-fab mdc-fab--mini">
+                        <span class="material-icons mdc-fab__icon">add</span>
+                    </button>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
+            </div>
+        </div>
+        
     </body>
     
 </html>

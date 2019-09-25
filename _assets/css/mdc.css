@@ -1,0 +1,25 @@
+:root{
+    --mdc-typography-font-family: 'Roboto Slab', serif;
+    --mdc-theme-primary: #2e7d32;
+/*    --mdc-theme-on-primary: #000000;*/
+    --mdc-theme-secondary: #2e7d32;
+/*    --mdc-theme-on-secondary: #ec2326;*/
+/*    --mdc-theme-surface: #;*/
+/*    --mdc-theme-on-surface: #;*/
+    --mdc-theme-background: #FFFFFF;
+}
+
+.mdc-typography, 
+.mdc-typography--headline1,
+.mdc-typography--headline2,
+.mdc-typography--headline3,
+.mdc-typography--headline4,
+.mdc-typography--headline5,
+.mdc-typography--headline6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.mdc-typography--headline1,
+.mdc-typography--headline2 {
+    font-weight: 100;
+}

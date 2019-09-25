@@ -1,0 +1,80 @@
+/* MENU */
+
+.litu-menu .mdc-button {
+    border-radius: 1px;
+}
+
+.litu-menu {
+    position: fixed; top: calc(100vw / 24); left: calc(100% / 24); z-index: 999;
+    width: calc(100% / 12 * 1.5); height: auto;
+}
+
+.litu-menu__logo {
+    height: auto;
+    background-color: var(--mdc-theme-background, #FFFFFF) !important;
+    padding: 8%;
+}
+
+.litu-menu__logo img {
+    width: 100%; height: auto;
+}
+
+.litu-menu__nav, .litu-menu__contato {
+    width: 49.5%; height: auto;
+    padding: 2%; margin-top: 2px;
+    background-color: var(--mdc-theme-primary);
+    text-align: center;
+}
+
+.litu-menu__contato {
+    float: right;
+}
+
+.litu-menu__nav i, litu-menu__contato i {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+#head {
+    height: 100vh;
+    background-image: url(../img/home/remow_litu-img--home__head.jpg);
+    background-size: 100%;
+    background-position: center top;
+}
+
+#head .mdc-layout-grid__inner {
+    height: 100%;
+    text-align: right;
+}
+
+/* QUEM SOMOS */
+
+#home-quem-somos {
+    background-color: var(--mdc-theme-background);
+    margin-top: -5vh;
+    transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+#home-quem-somos .mdc-fab--mini {
+    border-radius: 4px;
+    background-color: #00a6e8;
+}
+
+#home-quem-somos .mdc-layout-grid__inner {
+    margin: 5vh 0;
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+}
+
+#home-quem-somos h2 {
+    padding-left: 2vw;
+}
+
+#home-quem-somos #title{
+    border-bottom: solid 2px;
+    border-image:  linear-gradient(to right, #00a6e8 25%, #FFFFFF 25%, #FFFFFF 75%) 2;
+}
