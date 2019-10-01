@@ -25,7 +25,13 @@
               rel="stylesheet">
         <link href="assets/css/mdc.css"
               rel="stylesheet">
-        <link href="assets/css/tucano.css"
+        <link href="assets/css/litu.css"
+              rel="stylesheet">
+        <link href="assets/css/litu-home.css"
+              rel="stylesheet">
+        
+        <!-- PLUGINS -->
+        <link href="plugins/animate.css" 
               rel="stylesheet">
         
     </head>
@@ -46,11 +52,29 @@
             <div class="mdc-button mdc-button--raised litu-menu__contato">
                 <i class="material-icons">share</i>
             </div>
+            <span id="menu-menu">
+                <a class="mdc-button mdc-button--raised animated flipInX delay-025s litu-menu__menu"
+                   href="#quem-somos">
+                    <h6 class="mdc-typography--headline6">QUEM SOMOS</h6>
+                </a>
+                <a class="mdc-button mdc-button--raised animated flipInX delay-05s litu-menu__menu"
+                   href="#portfolio">
+                    <h6 class="mdc-typography--headline6">PORTFÓLIO</h6>
+                </a>
+                <a class="mdc-button mdc-button--raised animated flipInX delay-075s litu-menu__menu"
+                   href="#inovacao">
+                    <h6 class="mdc-typography--headline6">INOVAÇÃO</h6>
+                </a>
+                <a class="mdc-button mdc-button--raised animated flipInX delay-1s litu-menu__menu"
+                   href="#servicos">
+                    <h6 class="mdc-typography--headline6">SERVIÇOS</h6>
+                </a>
+            </span>
         </div>
         
         <!-- HEAD -->
         <div class="mdc-layout-grid"
-             id="head">
+             id="home-head">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5">
@@ -78,7 +102,8 @@
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"
+                     id="text">
                     <p class="mdc-typography--body1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in est a velit auctor tristique in nec nisi. Ut gravida sem cursus tincidunt imperdiet. Suspendisse vehicula libero eu mi cursus auctor ut et quam. Nulla pulvinar sodales enim sed fermentum. Nam ultrices felis lacus, at viverra nisl tincidunt nec.
                     </p>
@@ -90,6 +115,35 @@
             </div>
         </div>
         
+        <!-- INOVAÇÃO -->
+        <div class="mdc-layout-grid"
+             id="home-inovacao">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"
+                     id="title">
+                    <h2 class="mdc-typography--headline2 mdc-theme--text-primary-on-dark">
+                        INOVAÇÃO
+                    </h2>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"
+                     id="text">
+                    <p class="mdc-typography--body1 mdc-theme--text-secondary-on-dark">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in est a velit auctor tristique in nec nisi. Ut gravida sem cursus tincidunt imperdiet. Suspendisse vehicula libero eu mi cursus auctor ut et quam. Nulla pulvinar sodales enim sed fermentum. Nam ultrices felis lacus, at viverra nisl tincidunt nec.
+                    </p>
+                    <button class="mdc-fab mdc-fab--mini">
+                        <span class="material-icons mdc-fab__icon">add</span>
+                    </button>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
+            </div>
+        </div>
+        
     </body>
+    
+    <!-- JS -->
+    <script src="assets/js/litu.js"></script>
     
 </html>
