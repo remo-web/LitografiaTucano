@@ -34,6 +34,10 @@
     font-weight: bold;
 }
 
+#menu-menu{
+/*    display: none;*/
+}
+
 .litu-menu__menu{
     width: 100%;
     margin-top: 2px; padding: 2rem 0;
@@ -65,17 +69,17 @@
     -webkit-transform: skewY(-3deg);
 }
 
-#home-quem-somos .mdc-fab--mini {
-    border-radius: 4px;
-    background-color: #00a6e8;
-    font-weight: bold;
-}
-
 #home-quem-somos .mdc-layout-grid__inner {
     margin: 10vh 0;
     transform: skewY(3deg);
     -ms-transform: skewY(3deg);
     -webkit-transform: skewY(3deg);
+}
+
+#home-quem-somos .mdc-fab--mini {
+    border-radius: 4px;
+    background-color: #00a6e8;
+    font-weight: bold;
 }
 
 #home-quem-somos h2 {
@@ -84,26 +88,26 @@
 
 #home-quem-somos #title{
     border-bottom: solid 2px;
-    border-image:  linear-gradient(to right, #00a6e8 25%, #FFFFFF 25%, #FFFFFF 75%) 2;
+    border-image:  linear-gradient(to right, #00a6e8 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
 }
 /* END | QUEM SOMOS */
 
 /* INOVAÇÃO */
 #home-inovacao{
     background-image: url(../img/home/remow_litu-img--home__inov.png);
-    background-size: cover; background-position: center;
+    background-size: cover; background-position: center; background-attachment: fixed;
     background-color: rgba(0,0,0,0.7);
     background-blend-mode: overlay;
-    margin-top: -10vh;
+    margin-top: -5vh;
 }
 
 #home-inovacao .mdc-layout-grid__inner {
-    margin: 15vh 0 10vh 0;
+    margin: 10vh 0 10vh 0;
 }
 
 #home-inovacao .mdc-fab--mini {
     border-radius: 4px;
-    background-color: #ff00ff;
+    background-color: #ec008c;
     font-weight: bold;
 }
 
@@ -118,6 +122,42 @@
 
 #home-inovacao #title{
     border-bottom: solid 2px;
-    border-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 75%, #ff00ff 75%, #ff00ff 100%) 2;
+    border-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 75%, #ec008c 75%, #ec008c 100%) 2;
 }
 /* END | INOVAÇÃO */
+
+/* PARA QUEM */
+#home-para-quem {
+    background-color: var(--mdc-theme-background);
+    margin-top: -5vh;
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+}
+
+#home-para-quem .mdc-layout-grid__inner {
+    margin: 10vh 0;
+    transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+#home-para-quem .mdc-fab--mini {
+    border-radius: 4px;
+    background-color: #fff200;
+    font-weight: bold;
+}
+
+#home-para-quem h2 {
+    padding-left: 2vw;
+}
+
+#home-para-quem #title,
+#home-para-quem #text{
+    text-align: left;
+}
+
+#home-para-quem #title{
+    border-bottom: solid 2px;
+    border-image:  linear-gradient(to right, #fff200 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
+}
