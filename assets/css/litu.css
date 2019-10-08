@@ -5,3 +5,23 @@
 .litu-show{
     visibility: visible;
 }
+
+/* MDC */
+.litu-card{
+    margin: 0 0.6vw 0.6vw 0;
+}
+.litu-card__primary{
+    padding: 1rem;
+}
+
+.litu-card__title{
+    margin: 0;
+}
+
+.litu-card__subtitle{
+    margin: 0;
+}
+
+.litu-card__secondary{
+    padding: 0 1rem 8px;
+}

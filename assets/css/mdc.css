@@ -23,3 +23,7 @@
 .mdc-typography--headline2 {
     font-weight: 400;
 }
+
+.mdc-icon-button{
+    padding: 0;
+}

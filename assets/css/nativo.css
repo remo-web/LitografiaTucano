@@ -2,3 +2,22 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+.fa-linkedin-in,
+.fa-linkedin{
+    color: #0e76a8;
+}
+
+.fa-facebook-f,
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-instagram{
+    color: transparent;
+    background: #833ab4;
+    background: -webkit-linear-gradient(-75deg, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(-75deg, #fcb045, #fd1d1d, #833ab4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent.
+}

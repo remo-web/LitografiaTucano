@@ -16,6 +16,11 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
         
+        <!-- Font Awesome -->
+        <script crossorigin="anonymous"
+                src="https://kit.fontawesome.com/f43519f5e0.js">
+        </script>
+        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap"
               rel="stylesheet">
@@ -33,6 +38,13 @@
         <!-- PLUGINS -->
         <link href="plugins/animate.css" 
               rel="stylesheet">
+        <link href="plugins/Slick/slick.css"
+              rel="stylesheet"
+              type="text/css">
+        <link href="plugins/Slick/slick-theme.css"
+              rel="stylesheet"
+              type="text/css">
+
         
     </head>
     
@@ -52,25 +64,25 @@
             <div class="mdc-button mdc-button--raised litu-menu__contato">
                 <i class="material-icons">share</i>
             </div>
-            <span class="litu-hide"
-                  id="menu-menu">
-                <a class="mdc-button mdc-button--raised animated flipInX litu-menu__menu"
-                   href="#quem-somos">
+            <ul class="litu-hide"
+                id="menu-nav">
+                <li class="mdc-button mdc-button--raised animated flipOutX litu-menu__menu"
+                    href="#quem-somos">
                     <h6 class="mdc-typography--headline6">QUEM SOMOS</h6>
-                </a>
-                <a class="mdc-button mdc-button--raised animated flipInX delay-01s litu-menu__menu"
-                   href="#portfolio">
+                </li>
+                <li class="mdc-button mdc-button--raised animated flipOutX delay-01s litu-menu__menu"
+                    href="#portfolio">
                     <h6 class="mdc-typography--headline6">PORTFÓLIO</h6>
-                </a>
-                <a class="mdc-button mdc-button--raised animated flipInX delay-02s litu-menu__menu"
-                   href="#inovacao">
+                </li>
+                <li class="mdc-button mdc-button--raised animated flipOutX delay-02s litu-menu__menu"
+                    href="#inovacao">
                     <h6 class="mdc-typography--headline6">INOVAÇÃO</h6>
-                </a>
-                <a class="mdc-button mdc-button--raised animated flipInX delay-03s litu-menu__menu"
-                   href="#servicos">
+                </li>
+                <li class="mdc-button mdc-button--raised animated flipOutX delay-03s litu-menu__menu"
+                    href="#servicos">
                     <h6 class="mdc-typography--headline6">SERVIÇOS</h6>
-                </a>
-            </span>
+                </li>
+            </ul>
         </div>
         
         <!-- HEAD -->
@@ -154,6 +166,131 @@
                     </h2>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+                    <ul class="mdc-image-list">
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-bobs--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-japinha--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-megamatte--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-koni--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-megamatte--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-koni--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-bobs--logo.svg">
+                        </li>
+                        <li class="mdc-image-list__item">
+                            <img class="mdc-image-list__image"
+                                 src="assets/img/home/clientes/remow_litu-japinha--logo.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 litu-home--para-quem--depoimento">
+                    <span class="litu-home--para-quem--depoimento__Eduardo-Ourivio">
+                        <div class="mdc-card litu-card litu-home--para-quem--depoimento__foto">
+                            <div class="mdc-card__primary-action litu-card__primary-action"
+                                 tabindex="0">
+                                <div class="mdc-card__media mdc-card__media--square litu-card__media"
+                                     style="background-image: url(assets/img/home/clientes/remow_litu-koni--depoimento.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="mdc-card litu-card litu-home--para-quem--depoimento__texto">
+                            <div class="mdc-card__primary-action"
+                                 tabindex="0">
+                                <div class="litu-card__primary">
+                                    <h2 class="litu-card__title mdc-typography mdc-typography--headline6">Eduardo Ourivio</h2>
+                                    <h3 class="litu-card__subtitle mdc-typography mdc-typography--subtitle2 mdc-theme--text-hint-on-light">Fundador do Grupo Trigo</h3>
+                                </div>
+                                <div class="litu-card__secondary mdc-typography mdc-typography--body2 mdc-theme--text-secondary-on-light">Ut laoreet, metus id volutpat ornare, ipsum ipsum mattis magna, ac efficitur risus est vitae mi. Aenean libero enim, auctor id ex eget, tristique maximus libero.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <div class="mdc-card__action-icons">
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="site">
+                                        <i class="fas fa-link fa-xs"></i>
+                                    </button>
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="LinkedIn">
+                                        <i class="fab fa-linkedin-in fa-xs"></i>
+                                    </button>
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="Facebook">
+                                        <i class="fab fa-facebook-f fa-xs"></i>
+                                    </button>
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="Facebook">
+                                        <i class="fab fa-instagram fa-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="litu-home--para-quem--depoimento__Ricardo-Bomeny">
+                        <div class="mdc-card litu-card litu-home--para-quem--depoimento__foto">
+                            <div class="mdc-card__primary-action litu-card__primary-action"
+                                 tabindex="0">
+                                <div class="mdc-card__media mdc-card__media--square litu-card__media"
+                                     style="background-image: url(assets/img/home/clientes/remow_litu-bobs--depoimento.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="mdc-card litu-card litu-home--para-quem--depoimento__texto">
+                            <div class="mdc-card__primary-action"
+                                 tabindex="0">
+                                <div class="litu-card__primary">
+                                    <h2 class="litu-card__title mdc-typography mdc-typography--headline6">Ricardo Bomeny</h2>
+                                    <h3 class="litu-card__subtitle mdc-typography mdc-typography--subtitle2 mdc-theme--text-hint-on-light">Presidente do Bob's</h3>
+                                </div>
+                                <div class="litu-card__secondary mdc-typography mdc-typography--body2 mdc-theme--text-secondary-on-light">Ut laoreet, metus id volutpat ornare, ipsum ipsum mattis magna, ac efficitur risus est vitae mi. Aenean libero enim, auctor id ex eget, tristique maximus libero.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <div class="mdc-card__action-icons">
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="site">
+                                        <i class="fas fa-link fa-xs"></i>
+                                    </button>
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="LinkedIn">
+                                        <i class="fab fa-linkedin-in fa-xs"></i>
+                                    </button>
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="Facebook">
+                                        <i class="fab fa-facebook-f fa-xs"></i>
+                                    </button>
+                                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded"
+                                            data-mdc-ripple-is-unbounded="true"
+                                            title="Facebook">
+                                        <i class="fab fa-instagram fa-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
             </div>
         </div>
@@ -167,4 +304,12 @@
             type="text/javascript">
     </script>
     
+    <!-- Slick -->
+    <script type="text/javascript" 
+            src="plugins/Slick/slick.min.js">
+    </script>
+    <script type="text/javascript"
+            src="plugins/Slick/litu-slick.js">
+    </script>
+
 </html>
