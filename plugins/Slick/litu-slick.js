@@ -6,3 +6,12 @@ $(document).ready(function(){
         arrows: false,
     });
 });
+
+$(document).ready(function(){
+    $('#home-head').slick({
+        autoplay: false,
+        autoplaySpeed: 6000,
+        dots: false,
+        arrows: false,
+    });
+});

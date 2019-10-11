@@ -48,12 +48,29 @@
 /* END | MENU */
 
 /* HEADER */
-#home-head {
+#home-head,
+#home-head .slick-list,
+#home-head .slick-track{
     height: 100vh;
-    background-image: url(../img/home/remow_litu-img--home__head.jpg);
+}
+
+#home-head .mdc-layout-grid{
+    background-position: center;
     background-size: 100%;
-    background-position: center top;
-    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: soft-light;
+}
+
+.litu-home--head__slide1{
+    background-image: url(../img/home/remow_litu-img--home--head__slide1.jpg);
+}
+
+.litu-home--head__slide2{
+    background-image: url(../img/home/remow_litu-img--home--head__slide2.jpg);
+}
+
+#home-head .mdc-layout-grid__cell{
+    text-align: right;
 }
 
 #home-head .mdc-layout-grid__inner {

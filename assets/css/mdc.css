@@ -21,9 +21,28 @@
 
 .mdc-typography--headline1,
 .mdc-typography--headline2 {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .mdc-icon-button{
     padding: 0;
+}
+
+.mdc-typography--headline1 + .mdc-typography--subtitle1,
+.mdc-typography--headline1 + .mdc-typography--subtitle2{
+    margin-top: -3em;
+}
+
+.mdc-typography--headline2 + .mdc-typography--subtitle1,
+.mdc-typography--headline2 + .mdc-typography--subtitle2{
+    margin-top: -2.4em;
+}
+
+.mdc-typography--headline6 + .mdc-typography--subtitle1,
+.mdc-typography--headline6 + .mdc-typography--subtitle2{
+    margin-top: -1.2em;
+}
+
+.mdc-layout-grid__inner{
+    width: 100%;
 }
