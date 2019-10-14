@@ -31,8 +31,7 @@ $(function() {
         }
     );
     
-    //Altura da imagem do PARA QUEM 
-//    var getHeight = $(".litu-home--para-quem__texto").height();
-//    $(".litu-home--para-quem__foto").height( getHeight );
+//    FitText
+    jQuery("h1, h2").fitText();
     
 });

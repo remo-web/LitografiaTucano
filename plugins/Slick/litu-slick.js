@@ -8,9 +8,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('#home-head').slick({
-        autoplay: false,
-        autoplaySpeed: 6000,
+    $('.litu-home--head__titulo').slick({
+        autoplay: true,
+        autoplaySpeed: 2600,
         dots: false,
         arrows: false,
     });
