@@ -3,6 +3,10 @@ html, body {
     margin: 0;
 }
 
+h2 > hr{
+    margin: 0.415em 0;
+}
+
 .fa-linkedin-in,
 .fa-linkedin{
     color: #0e76a8;

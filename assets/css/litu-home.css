@@ -71,7 +71,7 @@
 /* END | HEADER */
 
 /* QUEM SOMOS */
-#home-quem-somos {
+#home-quemsomos {
     background-color: var(--mdc-theme-background);
     margin-top: -5vh;
     transform: skewY(-3deg);
@@ -79,27 +79,30 @@
     -webkit-transform: skewY(-3deg);
 }
 
-#home-quem-somos .mdc-layout-grid__inner {
+#home-quemsomos .mdc-layout-grid__inner {
     margin: 10vh 0;
     transform: skewY(3deg);
     -ms-transform: skewY(3deg);
     -webkit-transform: skewY(3deg);
 }
 
-#home-quem-somos .mdc-fab--mini {
+#home-quemsomos .mdc-fab--mini {
     border-radius: 4px;
     background-color: #00a6e8;
     font-weight: bold;
 }
 
-#home-quem-somos h2 {
-    padding-left: 2vw;
+.litu-home--quemsomos__titulo h2{
+    margin-bottom: 0;
 }
 
-#home-quem-somos .litu-home--quemsomos__titulo{
-    border-bottom: solid 2px;
-    border-image:  linear-gradient(to right, #00a6e8 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
+.litu-home--quemsomos__titulo hr{
+    margin-left: -2vw;
+    text-align: left;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #00a6e8 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
 }
+
 /* END | QUEM SOMOS */
 
 /* INOVAÇÃO */
@@ -121,23 +124,26 @@
     font-weight: bold;
 }
 
-#home-inovacao h2 {
-    padding-right: 2vw;
+.litu-home--inovacao__titulo h2{
+    margin-bottom: 0;
 }
 
-#home-inovacao .litu-home--quemsomos__titulo,
-#home-inovacao .litu-home--quemsomos__texto{
+.litu-home--inovacao__titulo hr{
+    margin-right: -2vw;
+    text-align: right;
+    border: solid 1px;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 75%, #ec008c 75%, #ec008c 100%) 2;
+}
+
+.litu-home--inovacao__titulo,
+.litu-home--inovacao__texto{
     text-align: right;
 }
 
-#home-inovacao .litu-home--quemsomos__titulo{
-    border-bottom: solid 2px;
-    border-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 75%, #ec008c 75%, #ec008c 100%) 2;
-}
 /* END | INOVAÇÃO */
 
 /* PARA QUEM */
-#home-para-quem {
+#home-paraquem {
     background-color: var(--mdc-theme-background);
     margin-top: -5vh;
     transform: skewY(3deg);
@@ -145,52 +151,77 @@
     -webkit-transform: skewY(3deg);
 }
 
-#home-para-quem .mdc-layout-grid__inner {
+#home-paraquem .mdc-layout-grid__inner {
     margin: 10vh 0;
     transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
 }
 
-#home-para-quem .mdc-fab--mini {
+#home-paraquem .mdc-fab--mini {
     border-radius: 4px;
     background-color: #fff200;
     font-weight: bold;
 }
 
-#home-para-quem #title h2 {
-    padding-left: 2vw;
+.litu-home--paraquem__titulo h2{
+    margin-bottom: 0;
 }
 
-#home-para-quem .litu-home--quemsomos__titulo{
+.litu-home--paraquem__titulo hr{
+    margin-left: -2vw;
     text-align: left;
-    border-bottom: solid 2px;
-    border-image:  linear-gradient(to right, #fff200 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #fff200 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
 }
 
-#home-para-quem .mdc-image-list .mdc-image-list__item{
+#home-paraquem .mdc-image-list .mdc-image-list__item{
     width: calc(100% / 4 - 0.6vw);
     margin: 0 0.6vw 0.6vw 0;
 }
 
-#home-para-quem .mdc-image-list .mdc-image-list__image{
+#home-paraquem .mdc-image-list .mdc-image-list__image{
     border-radius: 1.6vw 0.4vw;
 }
 
-.litu-home--para-quem--depoimento{
+.litu-home--paraquem--depoimento{
     display: flex;
 }
 
-.litu-home--para-quem--depoimento__foto{
+.litu-home--paraquem--depoimento__foto{
     width: calc(100% / 3); 
     height: calc(100% / 3 - 0.6vw);
 }
 
-.litu-home--para-quem--depoimento__foto .litu-card__media{
+.litu-home--paraquem--depoimento__foto .litu-card__media{
     background-position: center;
 }
 
-.litu-home--para-quem--depoimento__texto{
+.litu-home--paraquem--depoimento__texto{
     width: calc(100% / 3 * 2);
     height: fit-content;
 }
+
+/* END | PARA QUEM */
+
+/* PORTFÓLIO */
+
+#home-portfolio{
+    margin-top: -5vh;
+}
+
+#home-portfolio.mdc-layout-grid {
+    padding: 0;
+}
+#home-portfolio .mdc-layout-grid__cell{
+    z-index: -9999;
+}
+
+#home-portfolio .mdc-image-list .mdc-image-list__item{
+    width: calc(100% / 4);
+    margin: 0;
+}
+
+#home-portfolio .mdc-image-list .mdc-image-list__image{}
+
+/* END | PORTFÓLIO */

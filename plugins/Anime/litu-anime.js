@@ -1,6 +1,8 @@
 var textWrapper = document.querySelector('.litu-home--head__titulo1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
+//https://animejs.com/documentation/#finishedPromise
+
 anime.timeline({ 
     loop: true
 }).add({
