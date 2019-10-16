@@ -9,7 +9,10 @@
     --mdc-theme-background: #FFFFFF;
 }
 
-.mdc-typography, 
+.mdc-typography {
+    font-family: 'Roboto Slab', serif !important;
+}
+
 .mdc-typography--headline1,
 .mdc-typography--headline2,
 .mdc-typography--headline3,
@@ -17,6 +20,7 @@
 .mdc-typography--headline5,
 .mdc-typography--headline6 {
     font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
 }
 
 .mdc-typography--headline1,
@@ -26,6 +30,12 @@
 
 .mdc-icon-button{
     padding: 0;
+}
+
+.mdc-fab:not(.mdc-fab--extended),
+.mdc-fab--mini {
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .mdc-typography--headline1 + .mdc-typography--subtitle1,
@@ -46,3 +56,9 @@
 .mdc-layout-grid__inner{
     width: 100%;
 }
+
+/* MATERIAL ICONS */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }

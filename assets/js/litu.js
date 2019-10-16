@@ -1,5 +1,7 @@
 $(function() {
     
+    feather.replace()
+        
 //    $(".litu-menu__nav, #menu-nav, .litu-menu__menu").hover(
 //        function(){
 //            $("#menu-nav").removeClass("litu-hide");
@@ -30,8 +32,5 @@ $(function() {
             $(".litu-menu__menu").removeClass("flipInX").addClass("flipOutX");
         }
     );
-    
-//    FitText
-    jQuery("h1, h2").fitText();
-    
+
 });

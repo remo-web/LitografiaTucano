@@ -1,13 +1,12 @@
 /* MENU */
-.litu-menu .mdc-button {
-    border-radius: 1px;
-}
-
 .litu-menu {
-    position: fixed; top: calc(100vw / 24); left: calc(100% / 24); z-index: 999;
+    position: fixed; top: calc(100vw / 24); left: calc(100% / 24); z-index: 9999;
     width: calc(100% / 12 * 1.5); height: auto;
 }
 
+.litu-menu .mdc-button {
+    border-radius: 1px;
+}
 .litu-menu__logo {
     height: auto;
     background-color: var(--mdc-theme-background, #FFFFFF) !important;
@@ -80,16 +79,14 @@
 }
 
 #home-quemsomos .mdc-layout-grid__inner {
-    margin: 10vh 0;
+    margin: 10vh 0 15vh 0;
     transform: skewY(3deg);
     -ms-transform: skewY(3deg);
     -webkit-transform: skewY(3deg);
 }
 
 #home-quemsomos .mdc-fab--mini {
-    border-radius: 4px;
     background-color: #00a6e8;
-    font-weight: bold;
 }
 
 .litu-home--quemsomos__titulo h2{
@@ -115,13 +112,11 @@
 }
 
 #home-inovacao .mdc-layout-grid__inner {
-    margin: 10vh 0 10vh 0;
+    margin: 10vh 0 15vh 0;
 }
 
 #home-inovacao .mdc-fab--mini {
-    border-radius: 4px;
     background-color: #ec008c;
-    font-weight: bold;
 }
 
 .litu-home--inovacao__titulo h2{
@@ -152,16 +147,14 @@
 }
 
 #home-paraquem .mdc-layout-grid__inner {
-    margin: 10vh 0;
+    margin: 10vh 0 15vh 0;
     transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
 }
 
 #home-paraquem .mdc-fab--mini {
-    border-radius: 4px;
     background-color: #fff200;
-    font-weight: bold;
 }
 
 .litu-home--paraquem__titulo h2{
@@ -188,6 +181,10 @@
     display: flex;
 }
 
+.litu-home--paraquem--depoimento__texto {
+    box-shadow: none;
+}
+
 .litu-home--paraquem--depoimento__foto{
     width: calc(100% / 3); 
     height: calc(100% / 3 - 0.6vw);
@@ -212,6 +209,7 @@
 
 #home-portfolio.mdc-layout-grid {
     padding: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 30%);
 }
 #home-portfolio .mdc-layout-grid__cell{
     z-index: -9999;
@@ -223,5 +221,22 @@
 }
 
 #home-portfolio .mdc-image-list .mdc-image-list__image{}
+
+.litu-home--portfolio__mais{
+    position: absolute;
+    z-index: 1;
+    height: 90%;
+    margin-top: -5vh;
+    text-align: center;
+}
+
+.litu-home--portfolio__mais button,
+.litu-home--portfolio__mais h3{
+    display: inline-flex;
+}
+
+#home-portfolio .mdc-fab--mini {
+    background-color: #fff200;
+}
 
 /* END | PORTFÓLIO */

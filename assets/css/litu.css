@@ -6,6 +6,11 @@
     visibility: visible;
 }
 
+.litu-center {
+    text-align: center;
+    object-position: center;
+}
+
 /* MDC */
 .litu-card{
     margin: 0 0.6vw 0.6vw 0;
@@ -24,4 +29,10 @@
 
 .litu-card__secondary{
     padding: 0 1rem 8px;
+}
+
+/* SEÇÕES ONIPRESENTES */
+/* CONTATO */
+#footer-contato {
+    margin: 20vh 0 20vh 0;
 }
