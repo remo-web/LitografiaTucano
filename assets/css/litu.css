@@ -15,6 +15,14 @@
 .litu-card{
     margin: 0 0.6vw 0.6vw 0;
 }
+
+.litu-card__media-content--text-over-media .litu-card__media-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
 .litu-card__primary{
     padding: 1rem;
 }
@@ -34,5 +42,24 @@
 /* SEÇÕES ONIPRESENTES */
 /* CONTATO */
 #footer-contato {
-    margin: 20vh 0 20vh 0;
+    margin: 15vh 0 15vh 0;
+}
+
+#footer-contato .mdc-card {
+    margin: 0
+}
+
+#footer-contato .mdc-card__media-content .litu-feather {
+    margin: 0 0 2.6vh 0;
+    width: 100%;
+    height: 3.8rem;
+}
+
+#footer-contato .mdc-card__media-content{
+    display: flex;
+}
+
+#footer-contato .litu-card__media-content--content {
+    align-self: center;
+    width: 100%;
 }

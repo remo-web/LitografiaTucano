@@ -1,6 +1,6 @@
 $(function() {
     
-    feather.replace()
+    feather.replace({ class: 'litu-feather', 'stroke-width': 0.5, 'color': '#2e7d32', })
         
 //    $(".litu-menu__nav, #menu-nav, .litu-menu__menu").hover(
 //        function(){

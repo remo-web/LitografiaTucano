@@ -39,17 +39,20 @@
 }
 
 .mdc-typography--headline1 + .mdc-typography--subtitle1,
-.mdc-typography--headline1 + .mdc-typography--subtitle2{
+.mdc-typography--headline1 + .mdc-typography--subtitle2,
+.mdc-typography--headline1 + .mdc-typography--caption{
     margin-top: -3em;
 }
 
 .mdc-typography--headline2 + .mdc-typography--subtitle1,
-.mdc-typography--headline2 + .mdc-typography--subtitle2{
+.mdc-typography--headline2 + .mdc-typography--subtitle2,
+.mdc-typography--headline2 + .mdc-typography--caption{
     margin-top: -2.4em;
 }
 
 .mdc-typography--headline6 + .mdc-typography--subtitle1,
-.mdc-typography--headline6 + .mdc-typography--subtitle2{
+.mdc-typography--headline6 + .mdc-typography--subtitle2,
+.mdc-typography--headline6 + .mdc-typography--caption{
     margin-top: -1.2em;
 }
 

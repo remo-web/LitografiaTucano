@@ -188,6 +188,7 @@
 .litu-home--paraquem--depoimento__foto{
     width: calc(100% / 3); 
     height: calc(100% / 3 - 0.6vw);
+    margin-left: 2px;
 }
 
 .litu-home--paraquem--depoimento__foto .litu-card__media{
