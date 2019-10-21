@@ -3,12 +3,27 @@ html, body {
     margin: 0;
 }
 
+html {
+    background-image: url(../img/remow_litu-img--footer__bg.png); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: bottom;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
 h2 > hr{
     margin: 0.415em 0;
+}
+
+div > p {
+    margin-top: 0;
+}
+
+li {
+    line-height: 0;
 }
 
 .fa-linkedin-in,

@@ -39,10 +39,10 @@
     padding: 0 1rem 8px;
 }
 
-/* SEÇÕES ONIPRESENTES */
-/* CONTATO */
+/* ONIPRESENTES */
+/* contato */
 #footer-contato {
-    margin: 15vh 0 15vh 0;
+    margin: 15vh 0 20vh 0;
 }
 
 #footer-contato .mdc-card {
@@ -62,4 +62,19 @@
 #footer-contato .litu-card__media-content--content {
     align-self: center;
     width: 100%;
+}
+
+/* footer */
+#footer {
+    padding-left: 0; padding-right: 0;
+}
+
+.litu-footer--bar {
+    background-color: rgba(100,100,100,0.7);
+    margin-top: 5vh;
+    margin-bottom: -24px;
+}
+
+.litu-footer--bar h6{
+    margin: 0;
 }

@@ -32,5 +32,10 @@ $(function() {
             $(".litu-menu__menu").removeClass("flipInX").addClass("flipOutX");
         }
     );
+    
+    // ANO ATUAL
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById("year").innerHTML = year;
 
 });
