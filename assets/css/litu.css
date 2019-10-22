@@ -12,7 +12,7 @@
 }
 
 /* MDC */
-.litu-card{
+.litu-card {
     margin: 0 0.6vw 0.6vw 0;
 }
 
@@ -39,7 +39,99 @@
     padding: 0 1rem 8px;
 }
 
+/* PAGES */
+.litu-pages--head {
+    height: 100vh;
+    background-size: cover;
+}
+
+.litu-pages--head .mdc-layout-grid__inner {
+    height: 100%;
+}
+
+.litu-pages--head h1 > hr {
+    margin-left: -4vw;
+    text-align: left;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #00a6e8 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%) 2;
+}
+
+.litu-pages--head p {
+    text-align: right;
+}
+
+.litu-pages--content {
+    background-color: var(--mdc-theme-background);
+    margin-top: -5vh;
+    transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+.litu-pages--content .mdc-layout-grid__inner {
+    margin: 10vh 0 15vh 0;
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+}
+
 /* ONIPRESENTES */
+/* menu */
+.litu-menu {
+    position: fixed; top: calc(100vw / 24); left: calc(100% / 24); z-index: 9999;
+    width: calc(100% / 12 * 1.5); height: 100%;
+}
+
+.litu-menu .mdc-button {
+    border-radius: 1px;
+}
+.litu-menu__logo {
+    height: auto;
+    background-color: var(--mdc-theme-background, #FFFFFF) !important;
+    padding: 8%;
+}
+
+.litu-menu__logo img {
+    width: 100%; height: auto;
+}
+
+.litu-menu__nav, 
+.litu-menu__contato {
+    width: 49.5%; height: auto;
+    padding: 2%; margin-top: 2px;
+    background-color: var(--mdc-theme-primary);
+    text-align: center;
+}
+
+.litu-menu__contato {
+    float: right;
+}
+
+.litu-menu__nav i, litu-menu__contato i {
+    font-weight: bold;
+}
+
+#menu-nav{
+/*    display: none;*/
+    margin: 0; padding: 0;
+}
+
+.litu-menu__menu{
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 2px;
+}
+
+/* end | menu */
+/* orçamento */
+#menu-orcamento {
+    position: absolute;
+    bottom: calc(100vw / 24); left: 0;
+    width: 100%;
+    clear: both;
+}
+
+/* end | orçamento */
 /* contato */
 #footer-contato {
     margin: 15vh 0 20vh 0;

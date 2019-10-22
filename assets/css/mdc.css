@@ -14,7 +14,8 @@
 .mdc-typography--headline3,
 .mdc-typography--headline4,
 .mdc-typography--headline5,
-.mdc-typography--headline6 {
+.mdc-typography--headline6,
+.mdc-typography--button {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
 }
@@ -24,14 +25,14 @@
 .mdc-typography--body1,
 .mdc-typography--body2,
 .mdc-typography--caption,
-.mdc-typography--button,
 .mdc-typography--overline {
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
 }
 
 .mdc-typography--headline1,
-.mdc-typography--headline2 {
+.mdc-typography--headline2,
+.mdc-typography--button {
     font-weight: 600;
 }
 

@@ -1,0 +1,19 @@
+/* QUEM SOMOS */
+#pages-quem-somos {
+    background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
+}
+
+#pages-quem-somos.litu-pages--head .mdc-fab--mini {
+    background-color: #00a6e8;
+    float: right;
+}
+
+.litu-pages--quem-somos__intro {
+    text-align: center;
+}
+
+.litu-pages--quem-somos__intro hr {
+    border-top: solid 1px #00a6e8;
+    border-bottom: transparent;
+    margin-right: 40%; margin-left: 40%;
+}
