@@ -10,6 +10,11 @@ anime.timeline({
     loop: true
 }).add({
     targets: '.litu-home--head__titulo1 .line',
+    update: function() {
+        $(".litu-home--head__titulo1").removeClass("litu-hide");
+    }
+}).add({
+    targets: '.litu-home--head__titulo1 .line',
     scaleY: [0,1],
     opacity: [0.5,1],
     easing: "easeOutExpo",

@@ -1,5 +1,5 @@
 .litu-hide{
-    display: none;
+    visibility: hidden;
 }
 
 .litu-show{
