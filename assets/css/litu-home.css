@@ -13,7 +13,8 @@
 }
 
 .litu-home--head{
-    background-image: url(../img/home/remow_litu-img--home--head__slide1.jpg);
+    background-image: url(../videos/home/remow_litu-video--home__header.mp4);
+/*    https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/
 }
 
 #home-head .mdc-layout-grid__cell{

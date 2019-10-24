@@ -3,6 +3,9 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<
 
 //https://animejs.com/documentation/#finishedPromise
 
+var textWrapper2 = document.querySelector('.litu-home--head__titulo2 .letters');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
 anime.timeline({ 
     loop: true
 }).add({
@@ -29,14 +32,12 @@ anime.timeline({
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 2000
-});
-
-var textWrapper = document.querySelector('.litu-home--head__titulo2 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-anime.timeline({ 
-    loop: true
+    delay: 2000,
+}).add({
+    targets: '.litu-home--head__titulo2 .line',
+    update: function() {
+        $(".litu-home--head__titulo2").removeClass("litu-hide");
+    }
 }).add({
     targets: '.litu-home--head__titulo2 .line',
     scaleY: [0,1],
@@ -63,3 +64,4 @@ anime.timeline({
     easing: "easeOutExpo",
     delay: 2000
 });
+
