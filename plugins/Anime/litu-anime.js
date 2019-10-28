@@ -6,19 +6,30 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<
 var textWrapper2 = document.querySelector('.litu-home--head__titulo2 .letters');
 textWrapper2.innerHTML = textWrapper2.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ 
-    loop: true
-}).add({
-    targets: '.litu-home--head__titulo1 .line',
-    update: function() {
-        $(".litu-home--head__titulo1").removeClass("litu-hide");
-    }
-}).add({
+window.onload = function() {
+    t1.play()
+};
+
+var t1 = anime.timeline({ 
+    loop: false,
+    autoplay: false,
+});
+
+var t2 = anime.timeline({ 
+    loop: false,
+    autoplay: false,
+});
+
+t1
+.add({
     targets: '.litu-home--head__titulo1 .line',
     scaleY: [0,1],
     opacity: [0.5,1],
     easing: "easeOutExpo",
-    duration: 800
+    duration: 800,
+    begin: function() {
+        $('.litu-home--head__titulo1').attr("style","display: block");
+    },
 }).add({
     targets: '.litu-home--head__titulo1 .line',
     translateX: [0, document.querySelector('.litu-home--head__titulo1 .letters').getBoundingClientRect().width + 10],
@@ -38,17 +49,23 @@ anime.timeline({
     duration: 1000,
     easing: "easeOutExpo",
     delay: 2000,
-}).add({
-    targets: '.litu-home--head__titulo2 .line',
-    update: function() {
-        $(".litu-home--head__titulo2").removeClass("litu-hide");
-    }
-}).add({
+    complete: function() {
+        $('.litu-home--head__titulo1').attr("style","display: none");
+        $('.litu-home--head__titulo2').attr("style","display: block");
+        t2.restart();
+    },
+});
+    
+t2
+.add({
     targets: '.litu-home--head__titulo2 .line',
     scaleY: [0,1],
     opacity: [0.5,1],
     easing: "easeOutExpo",
-    duration: 800
+    duration: 800,
+    begin: function() {
+        $('.litu-home--head__titulo2').attr("style","display: block");
+    },
 }).add({
     targets: '.litu-home--head__titulo2 .line',
     translateX: [0, document.querySelector('.litu-home--head__titulo2 .letters').getBoundingClientRect().width + 10],
@@ -67,6 +84,10 @@ anime.timeline({
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 2000
+    delay: 2000,
+    complete: function() {
+        $('.litu-home--head__titulo2').attr("style","display: none");
+        $('.litu-home--head__titulo1').attr("style","display: block");
+        t1.restart();
+    },
 });
-
