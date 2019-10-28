@@ -1,4 +1,11 @@
 /* HEADER */
+#home-head-video {
+    position: absolute;
+    right: 0; bottom: 0;
+    min-height: 100vh; min-width: 100%;
+    z-index: -1;
+}
+
 #home-head{
     height: 100vh;
     background-position: center;
