@@ -18,6 +18,7 @@
 .mdc-typography--button {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
+    line-height: 1em;
 }
 
 .mdc-typography--subtitle1,
@@ -66,6 +67,11 @@
 
 .mdc-layout-grid__inner{
     width: 100%;
+}
+
+/* LIST */
+.mdc-list--dense .mdc-list-item {
+    height: 2.5em;
 }
 
 /* IMAGE LIST */

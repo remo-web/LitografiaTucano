@@ -30,17 +30,21 @@ li {
     line-height: 0;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas {
+    line-height: initial;
+}
+
 .fa-linkedin-in,
-.fa-linkedin{
+.fa-linkedin {
     color: #0e76a8;
 }
 
 .fa-facebook-f,
-.fa-facebook{
+.fa-facebook {
     color: #3b5998;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: transparent;
     background: #833ab4;
     background: -webkit-linear-gradient(-75deg, #833ab4, #fd1d1d, #fcb045);

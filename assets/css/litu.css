@@ -76,18 +76,26 @@
 }
 
 /* ONIPRESENTES */
+
 /* menu */
 .litu-menu {
-    position: fixed; top: calc(100vw / 24); left: calc(100% / 24); z-index: 9999;
+    position: fixed; 
+/*    top: calc(100vw / 24); left: calc(100% / 24); */
+    margin-left: var(--mdc-layout-grid-margin-desktop, 24px);
+    margin-top: var(--mdc-layout-grid-margin-desktop, 24px);
+    z-index: 9999;
     width: calc(100% / 12 * 1.5); height: 100%;
 }
 
-.litu-menu .mdc-button {
-    border-radius: 1px;
+.litu-menu .mdc-typography--overline {
+    font-family: 'Roboto Slab', serif;
+    font-size: .65rem; font-weight: 100;
 }
+
 .litu-menu__logo {
     height: auto;
-    background-color: var(--mdc-theme-background, #FFFFFF) !important;
+/*    background-color: var(--mdc-theme-background, #FFFFFF) !important;*/
+    background-color: transparent!important;
     padding: 8%;
 }
 
@@ -95,38 +103,23 @@
     width: 100%; height: auto;
 }
 
-.litu-menu__nav, 
-.litu-menu__contato {
-    width: 49.5%; height: auto;
-    padding: 2%; margin-top: 2px;
-    background-color: var(--mdc-theme-primary);
-    text-align: center;
-}
-
-.litu-menu__contato {
-    float: right;
-}
-
-.litu-menu__nav i, litu-menu__contato i {
-    font-weight: bold;
-}
-
 #menu-nav{
-/*    display: none;*/
     margin: 0; padding: 0;
 }
 
 .litu-menu__menu{
-    width: 100%;
-    padding: 2rem 0;
-    margin-top: 2px;
+    width: fit-content;
+}
+
+.litu-menu .fa-instagram {
+    background: transparent !important;
 }
 
 /* end | menu */
 /* orçamento */
 #menu-orcamento {
     position: absolute;
-    bottom: calc(100vw / 24); left: 0;
+    bottom: calc(100vh - 24px); left: 0;
     width: 100%;
     clear: both;
 }
