@@ -52,3 +52,7 @@ li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent.
 }
+
+.fa-pinterest-p {
+    color: #e60023;
+}
