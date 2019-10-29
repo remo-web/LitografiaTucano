@@ -71,8 +71,15 @@
 
 /* LIST */
 .mdc-list--dense .mdc-list-item {
-    height: 2.5em;
+    height: 3em;
 }
+
+:not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item::before, 
+:not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item::after {
+    background-color: var(--mdc-theme-primary, #2e7d32);
+}
+
+
 
 /* IMAGE LIST */
 .mdc-image-list .mdc-image-list__item {

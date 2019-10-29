@@ -85,7 +85,7 @@
     padding-right: var(--mdc-layout-grid-margin-desktop, 24px);
     padding-top: var(--mdc-layout-grid-margin-desktop, 24px);
     z-index: 9999;
-    width: calc(100% / 12 * 1.5); height: 100%;
+    width: calc(100% / 6); height: 100%;
     background-image: 
         linear-gradient(
             to right,
@@ -104,16 +104,10 @@
             hsla(0, 0%, 100%, 0) 100%
         );
 }
-
-.litu-menu .mdc-typography--overline {
-    font-family: 'Roboto Slab', serif;
-    font-size: .65rem; font-weight: 300;
-}
-
 .litu-menu__logo {
     height: auto;
 /*    background-color: var(--mdc-theme-background, #FFFFFF) !important;*/
-    background-color: transparent!important;
+    background-color: transparent !important;
     padding: 12%;
     margin-bottom: var(--mdc-layout-grid-margin-desktop, 24px);
 }
@@ -122,11 +116,17 @@
     width: 100%; height: auto;
 }
 
-#menu-nav{
+#menu-nav {
     margin: 0; padding: 0;
 }
 
-.litu-menu__menu{
+.litu-menu .mdc-typography--overline {
+    font-family: 'Roboto Slab', serif;
+    font-size: .65rem; 
+    font-weight: 300;
+}
+
+.litu-menu__menu {
     width: fit-content;
 }
 
