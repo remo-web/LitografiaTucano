@@ -85,7 +85,7 @@
     padding-right: var(--mdc-layout-grid-margin-desktop, 24px);
     padding-top: var(--mdc-layout-grid-margin-desktop, 24px);
     z-index: 9999;
-    width: calc(100% / 12 * 2); height: 100%;
+    width: calc(100% / 12 * 1.5); height: 100%;
     background-image: 
         linear-gradient(
             to right,
@@ -107,14 +107,15 @@
 
 .litu-menu .mdc-typography--overline {
     font-family: 'Roboto Slab', serif;
-    font-size: .70rem; font-weight: 300;
+    font-size: .55rem; font-weight: 300;
 }
 
 .litu-menu__logo {
     height: auto;
 /*    background-color: var(--mdc-theme-background, #FFFFFF) !important;*/
     background-color: transparent!important;
-    padding: 8%;
+    padding: 12%;
+    margin-bottom: var(--mdc-layout-grid-margin-desktop, 24px);
 }
 
 .litu-menu__logo img {
@@ -138,7 +139,6 @@
 #menu-orcamento {
     position: absolute;
     bottom: calc(0vh + 24px); left: var(--mdc-layout-grid-margin-desktop, 24px);
-    width: calc(100% - 48px);
     clear: both;
     border-bottom-left-radius: 0; border-bottom-right-radius: 0;
 }
