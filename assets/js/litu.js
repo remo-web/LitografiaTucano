@@ -16,9 +16,9 @@ $(function() {
 //        }
 //    );
     
-    $('#menu-orcamento').click(function() {
-        $('.mdc-dialog').addClass('mdc-dialog--open');
-    });
+//    $('#menu-orcamento').click(function() {
+//        $('.mdc-dialog').addClass('mdc-dialog--open');
+//    });
     
     // ANO ATUAL
     var date = new Date();
