@@ -14,10 +14,18 @@ $(function() {
 //        return new MDCDialog(el);
 //    });
     
+    //textfield
+    var textFields = document.querySelectorAll('.mdc-text-field')
+    for (var i = 0, textField; textField = textFields[i]; i++) {
+        mdc.textField.MDCTextField.attachTo(textField);
+    }
+    
     const dialog = new mdc.dialog.MDCDialog(document.querySelector('.mdc-dialog'));
     document.querySelector('.litu-orcamento--btn').addEventListener('click', function (evt) {
         dialog.open();
     })
-    mdc.dialog.MDCDialog.attachTo(document.querySelector('.mdc-dialog'));
-
+    dialog.listen('MDCDialog:opened', () => {
+//        textField.layout();
+    });
+    
 });

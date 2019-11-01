@@ -2,7 +2,7 @@
     --mdc-typography-font-family: 'Roboto Slab', serif;
     --mdc-theme-primary: #2e7d32;
 /*    --mdc-theme-on-primary: #000000;*/
-    --mdc-theme-secondary: #2e7d32;
+    --mdc-theme-secondary: #005005;
 /*    --mdc-theme-on-secondary: #ec2326;*/
 /*    --mdc-theme-surface: #;*/
 /*    --mdc-theme-on-surface: #;*/
@@ -26,7 +26,9 @@
 .mdc-typography--body1,
 .mdc-typography--body2,
 .mdc-typography--caption,
-.mdc-typography--overline {
+.mdc-typography--overline,
+.mdc-text-field__input,
+.mdc-floating-label {
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
 }
@@ -79,8 +81,6 @@
     background-color: var(--mdc-theme-primary, #2e7d32);
 }
 
-
-
 /* IMAGE LIST */
 .mdc-image-list .mdc-image-list__item {
     width: calc(100% / 4 - 1.8%);
@@ -94,6 +94,27 @@
 .mdc-image-list .mdc-image-list__item:nth-child(20),
 .mdc-image-list .mdc-image-list__item:nth-child(24) {
     margin-right: 0;
+}
+
+/* DIALOGS */
+.mdc-dialog__container {
+    width: 100vw;
+}
+.mdc-dialog .mdc-dialog__surface {
+    max-width: 96vw; width: 70vw;
+}
+.mdc-dialog .mdc-layout-grid {
+    width: 100%;
+    padding: 0;
+}
+
+/* TEXT FIELDS */
+.mdc-text-field {
+    width: 100%
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: var(--mdc-theme-secondary, #005005);
 }
 
 /* MATERIAL ICONS */

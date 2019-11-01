@@ -84,7 +84,7 @@
     padding-left: var(--mdc-layout-grid-margin-desktop, 24px);
     padding-right: var(--mdc-layout-grid-margin-desktop, 24px);
     padding-top: var(--mdc-layout-grid-margin-desktop, 24px);
-    z-index: 9999;
+    z-index: 1;
     width: calc(100% / 6); height: 100%;
     background-image: 
         linear-gradient(
