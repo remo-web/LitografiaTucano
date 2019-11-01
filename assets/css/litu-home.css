@@ -167,11 +167,9 @@
 #home-paraquem .litu-card__primary {
     padding-top: 0;
 }
-
 /* END | PARA QUEM */
 
 /* PORTFÓLIO */
-
 #home-portfolio{
     margin-top: -5vh;
 }
@@ -206,6 +204,23 @@
 
 #home-portfolio .mdc-fab--mini {
     background-color: #fff200;
+}
+/* END | PORTFÓLIO */
+
+/* SUSTENTABILIDADE */
+#home-sustentabilidade .mdc-layout-grid__inner {
+    margin: 15vh 0 20vh 0;
+}
+
+.litu-home--sustentabilidade__titulo hr{
+    margin-left: -2vw;
+    text-align: left;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #000000 25%, transparent 25%, transparent 100%) 2;
+}
+
+#home-sustentabilidade .mdc-fab--mini {
+    background-color: #000000;
 }
 
 /* END | PORTFÓLIO */

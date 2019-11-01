@@ -62,15 +62,15 @@
         <div aria-describedby="my-dialog-content"
              aria-labelledby="my-dialog-title"
              aria-modal="true"
-             class="mdc-dialog"
+             class="mdc-dialog litu-dialog--contato"
              role="alertdialog">
             <div class="mdc-dialog__container">
                 <form class="mdc-dialog__surface">
                     <h2 class="mdc-typography--headline5 mdc-dialog__title"
-                        id="my-dialog-title">Pedido de Orçamento</h2>
+                        id="my-dialog-title">Envia uma Mensagem para a Tucano</h2>
                     <div class="mdc-dialog__content">
                         <p class="mdc-typography--body1">
-                            Preencha, blá, blá...
+                            Pedidos de orçamento, dúvidas, sugestões ou qualquer outra necessidade de contato, preencha corretamento o formulário a seguir, clique em <strong>enviar</strong> e em breve nossa equipe de relacionamento entrará em contato.
                         </p>
                         <div class="mdc-layout-grid">
                             <div class="mdc-layout-grid__inner">
@@ -120,7 +120,7 @@
                                         <input class="mdc-text-field__input"
                                                id="telefone"
                                                required
-                                               type="number">
+                                               type="phone">
                                         <div class="mdc-notched-outline">
                                             <div class="mdc-notched-outline__leading"></div>
                                             <div class="mdc-notched-outline__notch">
@@ -293,7 +293,7 @@
                 </a>
             </ul>
             </div>
-            <button class="mdc-button mdc-button--raised mdc-typography--button litu-orcamento--btn"
+            <button class="mdc-button mdc-button--raised mdc-typography--button litu-dialog--open"
                     id="menu-orcamento">
                 <span class="mdc-button__label">
                     Orçamento
@@ -707,6 +707,29 @@
             </div>
         </div>
         
+        <!-- SUSTENTABILIDADE -->
+        <div class="mdc-layout-grid" style="background-color: rgba(0,0,0,0.12)"
+             id="home-sustentabilidade">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle litu-home--sustentabilidade__titulo">
+                    <h1 class="mdc-typography mdc-typography--headline2">
+                        Sustentabilidade
+                        <hr />
+                    </h1>
+                    <p class="mdc-typography--body1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in est a velit auctor tristique in nec nisi. Ut gravida sem cursus tincidunt imperdiet.
+                    </p>
+                    <a class="mdc-fab mdc-fab--mini"
+                       href="sustentabilidade/index.html"
+                       target="_self"
+                       role="button">
+                        <span class="material-icons mdc-fab__icon">add</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
         <!-- CONTATO -->
         <div class="mdc-layout-grid"
              id="footer-contato">
@@ -726,7 +749,7 @@
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
                 <!-- mensagem -->
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
-                    <div class="mdc-card litu-card">
+                    <div class="mdc-card litu-card litu-dialog--open">
                         <div class="mdc-card__primary-action litu-card__primary litu-center">
                             <div class="mdc-card__media mdc-card__media--square">
                                 <div class="mdc-card__media-content">

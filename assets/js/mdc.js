@@ -1,29 +1,30 @@
 $(function() {
     
-    var btns = document.querySelectorAll('.mdc-button');
-    for (var i = 0, btn; btn = btns[i]; i++) {
-        mdc.ripple.MDCRipple.attachTo(btn);
+    //ripple
+    var btnRipples = document.querySelectorAll('.mdc-button');
+    for (var i = 0, btnRipple; btnRipple = btnRipples[i]; i++) {
+        mdc.ripple.MDCRipple.attachTo(btnRipple);
     }
     
-    var btns = document.querySelectorAll('.mdc-list-item');
-    for (var i = 0, btn; btn = btns[i]; i++) {
-        mdc.ripple.MDCRipple.attachTo(btn);
+    var listRipples = document.querySelectorAll('.mdc-list-item');
+    for (var i = 0, listRipple; listRipple = listRipples[i]; i++) {
+        mdc.ripple.MDCRipple.attachTo(listRipple);
     }
-    
-//    const dialogs = [].map.call(document.querySelectorAll('.mdc-dialog'), function(el) {
-//        return new MDCDialog(el);
-//    });
     
     //textfield
-    var textFields = document.querySelectorAll('.mdc-text-field')
+    var textFields = document.querySelectorAll('.mdc-text-field');
     for (var i = 0, textField; textField = textFields[i]; i++) {
         mdc.textField.MDCTextField.attachTo(textField);
     }
     
+    // dialog
     const dialog = new mdc.dialog.MDCDialog(document.querySelector('.mdc-dialog'));
-    document.querySelector('.litu-orcamento--btn').addEventListener('click', function (evt) {
-        dialog.open();
-    })
+    let dialogOpen = document.querySelectorAll('.litu-dialog--open');
+    dialogOpen.forEach( function (elem) { 
+        elem.addEventListener('click', function (evt) {
+            dialog.open();
+        });
+    });
     dialog.listen('MDCDialog:opened', () => {
 //        textField.layout();
     });
