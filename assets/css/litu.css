@@ -122,8 +122,9 @@
 
 .litu-menu .mdc-typography--overline {
     font-family: 'Roboto Slab', serif;
-    font-size: .65rem; 
+/*    font-size: .65rem; */
     font-weight: 300;
+    color: #000000 !important;
 }
 
 .litu-menu__menu {
