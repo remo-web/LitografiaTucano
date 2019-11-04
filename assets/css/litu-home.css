@@ -1,8 +1,10 @@
 /* HEADER */
+
 #home-head-video {
     position: absolute;
     right: 0; bottom: 0;
     min-height: 100vh; min-width: 100%;
+    max-height: 100vh; max-width: 100%;
     z-index: -1;
 }
 
@@ -26,9 +28,11 @@
 #home-head .mdc-layout-grid__cell{
     text-align: right;
 }
+
 /* END | HEADER */
 
 /* QUEM SOMOS */
+
 #home-quemsomos {
     background-color: var(--mdc-theme-background);
     margin-top: -5vh;
@@ -62,6 +66,7 @@
 /* END | QUEM SOMOS */
 
 /* INOVAÇÃO */
+
 #home-inovacao{
     background-image: url(../img/home/remow_litu-img--home__inov.png);
     background-size: cover; background-position: center; background-attachment: fixed;
@@ -104,9 +109,11 @@
     border-radius: 1.6vw;
     padding: 0.8rem;
 }
+
 /* END | INOVAÇÃO */
 
 /* PARA QUEM */
+
 #home-paraquem {
     background-color: var(--mdc-theme-background);
     margin-top: -5vh;
@@ -167,9 +174,11 @@
 #home-paraquem .litu-card__primary {
     padding-top: 0;
 }
+
 /* END | PARA QUEM */
 
 /* PORTFÓLIO */
+
 #home-portfolio{
     margin-top: -5vh;
 }
@@ -177,9 +186,10 @@
 #home-portfolio.mdc-layout-grid {
     padding: 0;
     background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 30%);
+    cursor: pointer;
 }
 #home-portfolio .mdc-layout-grid__cell{
-    z-index: -9999;
+    z-index: -1;
 }
 
 #home-portfolio .mdc-image-list .mdc-image-list__item{
@@ -205,9 +215,11 @@
 #home-portfolio .mdc-fab--mini {
     background-color: #fff200;
 }
+
 /* END | PORTFÓLIO */
 
 /* SUSTENTABILIDADE */
+
 #home-sustentabilidade .mdc-layout-grid__inner {
     margin: 15vh 0 20vh 0;
 }
@@ -223,4 +235,4 @@
     background-color: #000000;
 }
 
-/* END | PORTFÓLIO */
+/* END | SUSTENTABILIDADE */
