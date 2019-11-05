@@ -4,7 +4,7 @@
     position: absolute;
     right: 0; bottom: 0;
     min-height: 100vh; min-width: 100%;
-    max-height: 100vh; max-width: 100%;
+    max-width: 100%;
     z-index: -1;
 }
 
@@ -181,6 +181,11 @@
 
 #home-portfolio{
     margin-top: -5vh;
+}
+
+#home-portfolio .mdc-layout-grid__inner:nth-child(2),
+#home-portfolio .mdc-image-list__image-aspect-container {
+    overflow: hidden;
 }
 
 #home-portfolio.mdc-layout-grid {

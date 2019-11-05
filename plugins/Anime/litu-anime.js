@@ -9,10 +9,6 @@ textWrapper2.innerHTML = textWrapper2.textContent.replace(/([^\x00-\x80]|\w)/g, 
 var textWrapper3 = document.querySelector('.litu-home--head__titulo3 .letters');
 textWrapper3.innerHTML = textWrapper3.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-window.onload = function() {
-    t1.play()
-};
-
 var t1 = anime.timeline({ 
     loop: false,
     autoplay: false,

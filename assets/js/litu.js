@@ -1,3 +1,20 @@
+
+window.onload = function() {
+    
+    // Anime Text
+    t1.play();
+    
+    // lax Parallax
+    //https://github.com/alexfoxy/laxxx
+    lax.setup() // init
+    const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+    }
+    window.requestAnimationFrame(updateLax)
+    
+};
+
 $(function() {
     
     feather.replace({ class: 'litu-feather', 'stroke-width': 0.5, 'color': '#2e7d32', })
