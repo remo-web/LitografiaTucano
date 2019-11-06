@@ -73,7 +73,8 @@
 
 /* LIST */
 .mdc-list--dense .mdc-list-item {
-    height: 3em;
+    height: 2em;
+    padding: 0 .5em;
 }
 
 :not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item::before, 
