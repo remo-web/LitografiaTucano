@@ -1,3 +1,39 @@
+/* PAGES */
+.litu-pages--head {
+    height: 100vh;
+    background-size: cover;
+}
+
+.litu-pages--head .mdc-layout-grid__inner {
+    height: 100%;
+}
+
+.litu-pages--head h1 > hr {
+    margin-left: -4vw;
+    text-align: left;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #00a6e8 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%) 2;
+}
+
+.litu-pages--head p {
+    text-align: right;
+}
+
+.litu-pages--content {
+    background-color: var(--mdc-theme-background);
+    margin-top: -5vh;
+    transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+.litu-pages--content .mdc-layout-grid__inner {
+    margin: 10vh 0 15vh 0;
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+}
+
 /* QUEM SOMOS */
 #pages-quem-somos {
     background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
@@ -14,6 +50,36 @@
 
 .litu-pages--quem-somos__intro hr {
     border-top: solid 1px #00a6e8;
+    border-bottom: transparent;
+    margin-right: 40%; margin-left: 40%;
+}
+
+/* PORTFÓLIO */
+#pages-portfolio {
+    
+}
+
+#pages-portfolio .mdc-list {
+    
+}
+
+#pages-portfolio .mdc-list-item {
+    height: 1.2em;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+#pages-portfolio.litu-pages--head .mdc-fab--mini {
+    background-color: #fff200;
+    float: right;
+}
+
+.litu-pages--portfolio__intro {
+    text-align: center;
+}
+
+.litu-pages--portfolio__intro hr {
+    border-top: solid 1px #fff200;
     border-bottom: transparent;
     margin-right: 40%; margin-left: 40%;
 }
