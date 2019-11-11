@@ -37,6 +37,16 @@ $(function() {
 //        $('.mdc-dialog').addClass('mdc-dialog--open');
 //    });
     
+    // ANIMATE
+    $( '.mdc-image-list__image' ).hover (
+        function(){ 
+            $( '.mdc-image-list__supporting' ).addClass( 'zoomIn' ) 
+        },
+        function(){ 
+            $( '.mdc-image-list__supporting' ).removeClass( 'litu-hide' ) 
+        },
+    )
+    
     // ANO ATUAL
     var date = new Date();
     var year = date.getFullYear();
