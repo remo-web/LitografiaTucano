@@ -108,7 +108,7 @@
     height: auto;
 /*    background-color: var(--mdc-theme-background, #FFFFFF) !important;*/
     background-color: transparent !important;
-    padding: var(--mdc-layout-grid-margin-desktop, 24px) 0;
+    padding: calc(var(--mdc-layout-grid-margin-desktop, 24px) * .5) 0 calc(var(--mdc-layout-grid-margin-desktop, 24px) * 1.5) 0;
 /*    margin-bottom: var(--mdc-layout-grid-margin-desktop, 24px);*/
 }
 
@@ -126,19 +126,39 @@
 }
 
 .litu-menu__menu {
+    min-width: 0;
     width: fit-content;
     margin-bottom: 0.4rem;
     border-radius: 2px;
 }
 
-/* end | menu */
-/* orçamento */
+.litu-menu__menu#menu-contato,
+.litu-menu__menu#menu-wa {
+    display: inline-flex;
+}
+
+.litu-menu__menu .fa-whatsapp{
+    color: white;
+}
+
 #menu-social {
     position: absolute;
-    bottom: calc(0vh + 24px); left: var(--mdc-layout-grid-margin-desktop, 24px);
+    bottom: 24px; left: var(--mdc-layout-grid-margin-desktop, 24px);
     clear: both;
     border-bottom-left-radius: 0; border-bottom-right-radius: 0;
 }
+
+#menu-social .mdc-icon-button {
+    width: 36px;
+    height: 36px;
+}
+
+#menu-social .mdc-card__actions {
+    min-height: auto;
+}
+
+/* end | menu */
+/* orçamento */
 
 /* end | orçamento */
 /* contato */
