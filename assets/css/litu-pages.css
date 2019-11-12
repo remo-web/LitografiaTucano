@@ -59,6 +59,10 @@
     
 }
 
+#pages-portfolio .mdc-image-list {
+    padding-top: 8vh;
+}
+
 #pages-portfolio .mdc-image-list .mdc-image-list__item {
     width: calc(100% / 4 - .2%);
     margin: 0 .2% .2% 0;
@@ -98,7 +102,7 @@
     text-align: center;
 }
 
-#pages-portfolio .litu-feather {
+.litu-pages--portfolio__galeria .litu-feather {
     color: white;
     stroke-width: 2;
 }

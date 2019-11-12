@@ -8,6 +8,7 @@ html {
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: bottom;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {

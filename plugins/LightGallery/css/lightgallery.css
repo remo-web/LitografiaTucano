@@ -979,12 +979,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /*poster*/
 
+.litu-pages--portfolio__galeria > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+    transition: ease .5s;
+}
+
+.litu-pages--portfolio__galeria > ul > li {
+    overflow: hidden;
+}
+
+.litu-pages--portfolio__galeria > ul > li a > img {
+    transition: ease .5s;
+}
+
 .litu-pages--portfolio__galeria > ul > li a:hover .lg-poster > svg {
   opacity: 1;
 }
 
 .litu-pages--portfolio__galeria > ul > li a .lg-poster {
-  background-color: rgba(0, 0, 0, 0.1);
+/*  background-color: rgba(0, 0, 0, 0.1);*/
   bottom: 0;
   left: 0;
   position: absolute;
@@ -1008,7 +1022,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .litu-pages--portfolio__galeria > ul > li a:hover .lg-poster {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 242, 0, 0.5);
 }
 
 .litu-pages--portfolio__galeria .justified-gallery > a:hover .lg-poster > svg {
