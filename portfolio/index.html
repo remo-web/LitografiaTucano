@@ -51,6 +51,9 @@
         <link href="../plugins/Slick/slick-theme.css"
               rel="stylesheet"
               type="text/css">
+        <link href="../plugins/LightGallery/css/lightgallery.css"
+              rel="stylesheet"
+              type="text/css">
 
         
     </head>
@@ -343,19 +346,23 @@
         <div class="mdc-layout-grid litu-pages--content">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9 litu-pages--portfolio__intro">
-                    <ul class="mdc-image-list my-image-list mdc-image-list--with-text-protection"
-                        id="portfolio-alimentacao">
-                        <li class="mdc-image-list__item">
-                            <div class="mdc-image-list__image-aspect-container">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9 litu-pages--portfolio__galeria">
+                    <ul class="mdc-image-list my-image-list mdc-image-list--with-text-protection litu-portfolio--galeria__alimentacao"
+                        id="lightgallery">
+                        <li class="mdc-image-list__item"
+                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__1.jpg"
+                            data-sub-html=".caption1">
+                            <a href="">
                                 <img class="mdc-image-list__image"
                                      src="../assets/img/portfolio/remow_litu-img--portfolio__1__thumb.jpg">
-                            </div>
-                            <div class="mdc-image-list__supporting">
-                                <span class="mdc-image-list__label">
+                                <div class="lg-poster">
                                     <i data-feather="maximize-2"></i>
-                                </span>
-                            </div>
+                                </div>
+                            </a>
+                            <div class="caption1"
+                                 style="display:none">
+                                <h4>Sunset Serenity</h4><p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                            </div> 
                         </li>
                         <li class="mdc-image-list__item">
                             <div class="mdc-image-list__image-aspect-container">
@@ -560,10 +567,34 @@
     </script>
     
     <!-- Anime Text -->
+<!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"
             type="text/javascript">
     </script>
     <script src="../plugins/Anime/litu-anime.js"
+            type="text/javascript">
+    </script>
+    
+-->
+    <!-- Light Gallery -->
+    <script src="../plugins/LightGallery/js/lightgallery.min.js"
+            type="text/javascript">
+    </script>
+    <script src="../plugins/LightGallery/js/lg-autoplay.min.js"
+            type="text/javascript">
+    </script>
+    <script src="../plugins/LightGallery/js/lg-fullscreen.min.js"
+            type="text/javascript">
+    </script>
+<!--
+    <script src="../plugins/LightGallery/js/lg-thumbnail.min.js"
+            type="text/javascript">
+    </script>
+-->
+    <script src="../plugins/LightGallery/js/lg-zoom.min.js"
+            type="text/javascript">
+    </script>
+    <script src="../plugins/LightGallery/js/lg-hash.min.js"
             type="text/javascript">
     </script>
     

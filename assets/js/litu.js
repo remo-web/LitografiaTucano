@@ -13,11 +13,17 @@ window.onload = function() {
     }
     window.requestAnimationFrame(updateLax)
     
+
+    
 };
 
 $(function() {
     
+    // Feather Icon
     feather.replace({ class: 'litu-feather', 'stroke-width': 0.5, 'color': '#2e7d32', })
+    
+    // LightGallery
+    lightGallery(document.getElementById('lightgallery')); 
         
 // MENU DEPRECATED
 //    $( ".litu-menu__nav, #menu-nav, .litu-menu__menu" ).mouseenter( 
@@ -38,14 +44,14 @@ $(function() {
 //    });
     
     // ANIMATE
-    $( '.mdc-image-list__image' ).hover (
-        function(){ 
-            $( '.mdc-image-list__supporting' ).addClass( 'zoomIn' ) 
-        },
-        function(){ 
-            $( '.mdc-image-list__supporting' ).removeClass( 'litu-hide' ) 
-        },
-    )
+//    $( '.mdc-image-list__image' ).hover( 
+//        function(){ 
+//            $( '.mdc-image-list__supporting' ).addClass( 'zoomIn' ) 
+//        },
+//        function(){ 
+//            $( '.mdc-image-list__supporting' ).removeClass( 'litu-hide' ) 
+//        },
+//    )
     
     // ANO ATUAL
     var date = new Date();
