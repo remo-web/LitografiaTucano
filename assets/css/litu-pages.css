@@ -35,7 +35,7 @@
 }
 
 /* QUEM SOMOS */
-#pages-quem-somos {
+#pages-quem-somos.litu-pages--head {
     background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
 }
 
