@@ -31,12 +31,35 @@ $(function() {
     feather.replace({ class: 'litu-feather', 'stroke-width': 0.5, 'color': '#2e7d32', })
     
     // LightGallery
-    lightGallery(document.querySelector('.lightgallery')); 
+    lightGallery(document.querySelector( '.lightgallery' )); 
     
     // Exibir Portfolio
-    $( '.litu-pages--head--menu__alimentacao' ).on('click', function (){
-        $( '.litu-portfolio--galeria__alimentacao' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-alimentacao .mdc-image-list__item' ).toggleClass( 'animated' );
+    $( '.litu-pages--head--menu__tudo' ).on( 'click', function() {
+        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
+        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
+        $( '#portfolio-galeria li' ).toggleClass( 'litu-hide' );
+        $( '#portfolio-galeria li' ).toggleClass( 'animated fadeInUp' );
+        setTimeout( function() {
+            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
+        }, 3000);
+    });
+    $( '.litu-pages--head--menu__alimentacao' ).on( 'click', function() {
+        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
+        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
+        $( '#portfolio-galeria .alimentacao' ).toggleClass( 'litu-hide' );
+        $( '#portfolio-galeria .alimentacao' ).toggleClass( 'animated fadeInUp' );
+        setTimeout( function() {
+            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
+        }, 3000);
+    });
+    $( '.litu-pages--head--menu__corporativo' ).on( 'click', function() {
+        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
+        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
+        $( '#portfolio-galeria .corporativo' ).toggleClass( 'litu-hide' );
+        $( '#portfolio-galeria .corporativo' ).toggleClass( 'animated fadeInUp' );
+        setTimeout( function() {
+            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
+        }, 3000);
     });
         
     // ANO ATUAL

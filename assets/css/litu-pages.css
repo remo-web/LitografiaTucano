@@ -59,8 +59,8 @@
     
 }
 
-#pages-portfolio .mdc-image-list {
-    padding-top: 8vh;
+.litu-pages--portfolio__galeria__text {
+    margin-bottom: 4vh;
 }
 
 #pages-portfolio .mdc-image-list .mdc-image-list__item {
@@ -72,6 +72,10 @@
     max-width: 25vw;
     justify-content: flex-end;
     margin-left: auto;
+}
+
+#pages-portfolio .litu-pages--head li.mdc-list-item {
+    height: auto;
 }
 
 #pages-portfolio .litu-pages--head .mdc-list-item {
