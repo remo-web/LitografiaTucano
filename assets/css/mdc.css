@@ -1,5 +1,5 @@
 :root{
-    --mdc-typography-font-family: 'Roboto Slab', serif;
+    --mdc-typography-font-family: 'Assistant', sans-serif;
     --mdc-theme-primary: #2e7d32;
 /*    --mdc-theme-on-primary: #000000;*/
     --mdc-theme-secondary: #005005;
@@ -18,9 +18,10 @@
 .mdc-typography--button {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
-/*    line-height: 1em;*/
+    line-height: 1;
 }
 
+.mdc-typography,
 .mdc-typography--subtitle1,
 .mdc-typography--subtitle2,
 .mdc-typography--body1,

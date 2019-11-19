@@ -31,6 +31,10 @@ li {
     line-height: 0;
 }
 
+bold {
+    font-weight: bold;
+}
+
 .fa, .fab, .fad, .fal, .far, .fas {
     line-height: initial;
 }

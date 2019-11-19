@@ -54,6 +54,29 @@
     margin-right: 40%; margin-left: 40%;
 }
 
+.litu-pages--quem-somos__context {
+    background-image: url(../img/quem-somos/remow_litu-img--quem-somos__context.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.litu-pages--quem-somos__context .mdc-layout-grid__inner {
+    margin: 15vh 0;
+}
+
+.litu-pages--quem-somos__significado,
+.litu-pages--quem-somos__significado .mdc-layout-grid__inner {
+    background-color: transparent;
+    margin: -10vh 0 0 0;
+}
+
+.litu-pages--quem-somos__significado__content {
+    background-color: darkgray;
+    margin: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    padding: var(--mdc-layout-grid-margin-desktop, 24px);
+}
+
 /* PORTFÓLIO */
 #pages-portfolio {
     
