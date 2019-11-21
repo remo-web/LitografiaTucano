@@ -65,16 +65,35 @@
     margin: 15vh 0;
 }
 
-.litu-pages--quem-somos__significado,
 .litu-pages--quem-somos__significado .mdc-layout-grid__inner {
+    margin: 0;
+}
+
+.litu-pages--quem-somos__significado {
     background-color: transparent;
-    margin: -10vh 0 0 0;
+    margin: -20vh 0 0 0;
+    position: absolute;
 }
 
 .litu-pages--quem-somos__significado__content {
     background-color: darkgray;
     margin: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
     padding: var(--mdc-layout-grid-margin-desktop, 24px);
+}
+
+.litu-pages--quem-somos__passado {
+    background-color: transparent;
+}
+
+.litu-pages--quem-somos__passado__content h3 {
+    text-align: right;
+}
+
+.litu-pages--quem-somos__passado__content hr {
+    border-top: solid 1px #00a6e8;
+    border-bottom: transparent;
+    margin-right: -2vw;
+    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8     75%, #00a6e8 100%) 2;
 }
 
 /* PORTFÓLIO */
