@@ -37,6 +37,7 @@
 /* QUEM SOMOS */
 #pages-quem-somos.litu-pages--head {
     background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
+    background-attachment: fixed;
 }
 
 #pages-quem-somos.litu-pages--head .mdc-fab--mini {
@@ -55,9 +56,44 @@
 }
 
 .litu-pages--quem-somos__context {
-    background-image: url(../img/quem-somos/remow_litu-img--quem-somos__context.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 10vh 0;
+}
+
+.litu-pages--quem-somos__context__old:before {
+    content: "";
+    background-image: url(../img/quem-somos/remow_litu-img--quem-somos__context__old.jpg);
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+    height: 100vh;
+    width: 100vw;
+    top: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    left: 0;
+    position: absolute;
+    z-index: -999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.litu-pages--quem-somos__context__new:before {
+    content: "";
+    background-image: url(../img/quem-somos/remow_litu-img--quem-somos__context__new.jpg);
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+    height: 100vh;
+    width: 100vw;
+    top: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    left: 0;
+    position: absolute;
+    z-index: -999;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -93,7 +129,7 @@
     border-top: solid 1px #00a6e8;
     border-bottom: transparent;
     margin-right: -2vw;
-    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8     75%, #00a6e8 100%) 2;
+    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8 75%, #00a6e8 100%) 2;
 }
 
 /* PORTFÓLIO */
