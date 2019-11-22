@@ -71,7 +71,7 @@
     -webkit-transform: skewY(3deg);
     height: 100vh;
     width: 100vw;
-    top: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    top: -10vh;
     left: 0;
     position: absolute;
     z-index: -999;
@@ -88,7 +88,7 @@
     -webkit-transform: skewY(3deg);
     height: 100vh;
     width: 100vw;
-    top: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    top: -10vh;
     left: 0;
     position: absolute;
     z-index: -999;
