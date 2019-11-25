@@ -49,6 +49,16 @@
     -webkit-transform: skewY(3deg);
 }
 
+#home-quemsomos .mdc-linear-progress__bar-inner {
+    border-color: #00a6e8;
+}
+
+#home-quemsomos h5 {
+    color: #00a6e8;
+    margin-top: 6px;
+    transform: translateX(50%)
+}
+
 #home-quemsomos .mdc-fab--mini {
     background-color: #00a6e8;
 }
