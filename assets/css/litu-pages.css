@@ -177,11 +177,11 @@
     -webkit-text-stroke-color: var(--mdc-theme-text-primary-on-light);
 }
 
-/*
 #pages-portfolio .mdc-image-list .mdc-image-list__item {
     width: calc(100% / 4 - .2%);
     margin: 0 .2% .2% 0;
 }
+/*
 
 #pages-portfolio .litu-pages--head p {
     max-width: 25vw;

@@ -1,7 +1,7 @@
 $(function() {
     
-    $( '.mdc-card__media-content' ).hover( function() {
-        $(this).children( '.litu-pages--portfolio__head__item' ).toggleClass( 'animated flipInX litu-hide' );
+    $( '.mdc-card__media' ).hover( function() {
+        $(this).children( '.mdc-card__media-content' ).children( '.litu-pages--portfolio__head__item' ).toggleClass( 'animated flipInX litu-hide' );
     });
 
     // LightGallery
