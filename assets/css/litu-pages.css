@@ -160,11 +160,21 @@
     margin-bottom: 4vh;
 }
 
-#pages-portfolio .litu-pages--portfolio__head__item {
+.litu-pages--head__nav .mdc-card {
+    background-color: #fff200;
+}
+
+.mdc-card__media-content {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%; right: auto; left: 50%; bottom: auto;
     transform: translate(-50%, -50%);
     margin: 0;
+}
+
+.fas.litu-pages--portfolio__head__item {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--mdc-theme-text-primary-on-light);
 }
 
 /*

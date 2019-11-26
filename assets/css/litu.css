@@ -136,10 +136,13 @@
     margin: 0;
 }
 
-#footer-contato .mdc-card__media-content .litu-feather {
+#footer-contato .mdc-card__media-content i {
     margin: 0 0 2.6vh 0;
     width: 100%;
-    height: 3.8rem;
+    color: transparent;
+    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-color: var(--mdc-theme-primary);
+/*    height: 3.8rem;*/
 }
 
 #footer-contato .mdc-card__media-content{
