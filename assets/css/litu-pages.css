@@ -35,6 +35,14 @@
 }
 
 /* QUEM SOMOS */
+
+#pages-quem-somos.litu-pages--head:before {
+    content: "";
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-color: black
+}
+
 #pages-quem-somos.litu-pages--head {
     background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
     background-attachment: fixed;
@@ -164,6 +172,10 @@
     background-color: #fff200;
 }
 
+.litu-pages--head__nav__last .mdc-card {
+    background-color: white;
+}
+
 .mdc-card__media-content {
     position: absolute;
     top: 50%; right: auto; left: 50%; bottom: auto;
@@ -171,10 +183,29 @@
     margin: 0;
 }
 
-.fas.litu-pages--portfolio__head__item {
+.litu-pages--portfolio__head__item {
+    text-align: center;
+}
+
+i.fa-angle-double-down.litu-pages--portfolio__head__item {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff200;
+}
+
+i.litu-pages--portfolio__head__item {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--mdc-theme-text-primary-on-light);
+}
+
+.litu-pages--portfolio__galeria__text .mdc-button--unelevated {
+    background-color: #fff200;
+}
+
+.litu-pages--portfolio__galeria__text .mdc-button:last-child, 
+.litu-pages--head--menu__tudo:last-child {
+    color: #fff200;
 }
 
 #pages-portfolio .mdc-image-list .mdc-image-list__item {

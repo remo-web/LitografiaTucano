@@ -326,16 +326,19 @@
                     <p class="mdc-typography mdc-typography--body2 mdc-theme--text-primary-on-dark">
                         Curabitur in velit vitae eros sodales luctus. Phasellus bibendum metus vitae efficitur ultrices. Integer vehicula ipsum augue, ut finibus nunc ultrices vehicula. Maecenas at maximus dolor. Quisque et tempor dui. Curabitur at dapibus erat. Fusce sodales purus eu egestas mattis. Sed turpis neque, egestas consectetur tortor et, tincidunt volutpat diam. Curabitur ac posuere felis. Maecenas sit amet convallis tortor.
                     </p>
-                    <button class="mdc-fab mdc-fab--mini">
-                        <span class="material-icons mdc-fab__icon">add</span>
-                    </button>
+                    <a class="mdc-fab mdc-fab--mini"
+                       href="#content"
+                       target="_self">
+                        <i class="fas fa-angle-down mdc-fab__icon"></i>
+                    </a>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
             </div>
         </div>
         
         <!-- CONTENT -->
-        <div class="mdc-layout-grid litu-pages--content">
+        <div class="mdc-layout-grid litu-pages--content"
+             id="content">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 litu-pages--quem-somos__intro">
