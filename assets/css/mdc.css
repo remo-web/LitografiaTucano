@@ -44,6 +44,10 @@
     padding: 0;
 }
 
+.mdc-card__primary-action {
+    color: var(--mdc-theme-primary, #2e7d32);
+}
+
 .mdc-fab:not(.mdc-fab--extended),
 .mdc-fab--mini {
     border-radius: 4px;
