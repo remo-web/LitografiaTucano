@@ -164,12 +164,17 @@
     
 }
 
+#pages-portfolio .litu-pages--head p {
+    white-space: nowrap;
+    max-width: 66.666vw;
+}
+
 .litu-pages--portfolio__galeria__text {
     margin-bottom: 4vh;
 }
 
 .litu-pages--head__nav .mdc-card {
-    border: solid 1px var(--mdc-theme-primary);
+    border: solid 0px var(--mdc-theme-primary);
 }
 
 .litu-pages--head__nav__last .mdc-card {
@@ -212,7 +217,7 @@ i.litu-pages--portfolio__head__item {
 }
 
 #pages-portfolio .mdc-image-list .mdc-image-list__item {
-    width: calc(100% / 4 - .2%);
+    width: calc(100% / 3 - .2%);
     margin: 0 .2% .2% 0;
 }
 /*

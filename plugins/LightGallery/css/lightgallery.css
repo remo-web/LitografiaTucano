@@ -979,7 +979,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /*poster*/
 
-.litu-pages--portfolio__galeria > ul > li a:hover > img {
+.litu-pages--portfolio__galeria > ul > li a:hover > .litu-pages--portfolio__expand {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
     transition: ease .5s;
@@ -989,11 +989,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     overflow: hidden;
 }
 
-.litu-pages--portfolio__galeria > ul > li a > img {
+.litu-pages--portfolio__galeria > ul > li a > .litu-pages--portfolio__expand {
     transition: ease .5s;
 }
 
-.litu-pages--portfolio__galeria > ul > li a:hover .lg-poster > svg {
+.litu-pages--portfolio__galeria > ul > li a:hover .lg-poster > .litu-pages--portfolio__expand {
   opacity: 1;
 }
 
@@ -1009,10 +1009,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: background-color 0.15s ease 0s;
 }
 
-.litu-pages--portfolio__galeria > ul > li a .lg-poster > svg {
+.litu-pages--portfolio__galeria > ul > li a .lg-poster > .litu-pages--portfolio__expand {
   left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
+    transform: translate(-50%, -50%);
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -1025,7 +1024,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: rgba(255, 242, 0, 0.5);
 }
 
-.litu-pages--portfolio__galeria .justified-gallery > a:hover .lg-poster > svg {
+.litu-pages--portfolio__galeria .justified-gallery > a:hover .lg-poster > .litu-pages--portfolio__expand {
   opacity: 1;
 }
 
@@ -1041,10 +1040,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: background-color 0.15s ease 0s;
 }
 
-.litu-pages--portfolio__galeria .justified-gallery > a .lg-poster > svg {
+.litu-pages--portfolio__galeria .justified-gallery > a .lg-poster > .litu-pages--portfolio__expand {
   left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
+    transform: translate(50%, 50%);
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -1057,10 +1055,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.litu-pages--portfolio__galeria .video .lg-poster svg {
+.litu-pages--portfolio__galeria .video .lg-poster .litu-pages--portfolio__expand {
   height: 48px;
-  margin-left: -24px;
-  margin-top: -24px;
+    transform: translate(50%, 50%);
   opacity: 0.8;
   width: 48px;
 }
