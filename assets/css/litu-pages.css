@@ -12,7 +12,6 @@
     margin-left: -4vw;
     text-align: left;
     border: solid 1px;
-    border-image: linear-gradient(to right, #00a6e8 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%) 2;
 }
 
 .litu-pages--head p {
@@ -46,6 +45,10 @@
 #pages-quem-somos.litu-pages--head {
     background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
     background-attachment: fixed;
+}
+
+#pages-quem-somos .litu-pages--head h1 > hr {
+    border-image: linear-gradient(to right, #00a6e8 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%) 2;
 }
 
 #pages-quem-somos.litu-pages--head .mdc-fab--mini {
@@ -154,6 +157,135 @@
 
 .litu-pages--quem-somos__passado__content hr {
     border-top: solid 1px #00a6e8;
+    border-bottom: transparent;
+    margin-right: -2vw;
+    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8 75%, #00a6e8 100%) 2;
+}
+
+/* INOVAÇÃO */
+
+#pages-inovacao.litu-pages--head:before {
+    content: "";
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-color: black
+}
+
+#pages-inovacao.litu-pages--head {
+    background-image: url(../img/inovacao/remow_litu-img--inovacao__bg.jpg);
+    background-attachment: fixed;
+}
+
+#pages-inovacao .litu-pages--head h1 > hr {
+    border-image: linear-gradient(to right, #ec008c 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%) 2;
+}
+
+#pages-inovacao.litu-pages--head .mdc-fab--mini {
+    background-color: #ec008c;
+    float: right;
+}
+
+.litu-pages--inovacao__intro {
+    text-align: center;
+}
+
+.litu-pages--inovacao__intro hr {
+    border-top: solid 1px #ec008c;
+    border-bottom: transparent;
+    margin-right: 40%; margin-left: 40%;
+}
+
+.litu-pages--inovacao__context {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 10vh 0;
+}
+
+.litu-pages--inovacao__context__old:before {
+    content: "";
+    background-image: url(../img/inovacao/remow_litu-img--inovacao__context__old.jpg);
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+    height: 100vh;
+    width: 100vw;
+    top: -10vh;
+    left: 0;
+    position: absolute;
+    z-index: -999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.litu-pages--inovacao__context__new:before {
+    content: "";
+    background-image: url(../img/inovacao/remow_litu-img--inovacao__context__new.jpg);
+    transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
+    height: 100vh;
+    width: 100vw;
+    top: -10vh;
+    left: 0;
+    position: absolute;
+    z-index: -999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.litu-pages--inovacao__context .mdc-layout-grid__inner {
+    margin: 15vh 0;
+}
+
+.litu-pages--inovacao__significado .mdc-layout-grid__inner {
+    margin: 0;
+}
+
+.litu-pages--inovacao__significado {
+    background-color: transparent;
+    margin: -20vh 0 0 0;
+    position: absolute;
+}
+
+.litu-pages--inovacao__significado__content {
+    background-color: darkgray;
+    margin: calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    padding: var(--mdc-layout-grid-margin-desktop, 24px);
+}
+
+.litu-pages--inovacao__passado,
+.litu-pages--inovacao__presente {
+    background-color: transparent;
+}
+
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item {
+    width: calc(100% / 6 - 2.4%);
+    margin: 0 2.4% 2.4% 0;
+}
+
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item:nth-child(6),
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item:nth-child(12),
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item:nth-child(18),
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item:nth-child(24),
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item:nth-child(30),
+.litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item:nth-child(36) {
+    margin-right: 0;
+}
+
+.litu-pages--inovacao__presente .mdc-image-list__image {
+    width: 75%;
+}
+
+.litu-pages--inovacao__passado__content h3 {
+    text-align: right;
+}
+
+.litu-pages--inovacao__passado__content hr {
+    border-top: solid 1px #ec008c;
     border-bottom: transparent;
     margin-right: -2vw;
     border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8 75%, #00a6e8 100%) 2;
