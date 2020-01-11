@@ -172,8 +172,21 @@
 }
 
 #pages-inovacao.litu-pages--head {
-    background-image: url(../img/inovacao/remow_litu-img--inovacao__bg.jpg);
+/*    background-image: url(../img/inovacao/remow_litu-img--inovacao--head__bg.jpg);*/
     background-attachment: fixed;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#pages-inovacao.litu-pages--head:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+/*    width: 100vw; height: 100vh;*/
+    background-image: url(../img/inovacao/remow_litu-img--inovacao--head__bg.jpg);
+    filter: grayscale(100%);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
 }
 
 #pages-inovacao .litu-pages--head h1 > hr {
@@ -262,6 +275,11 @@
     background-color: transparent;
 }
 
+.litu-pages--inovacao__resultado {
+    background-color: white;
+    background-image: linear-gradient(to right, #FFFFFF 16.666%, #ec008c 16.666%, #ec008c 100%);
+}
+
 .litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item {
     width: calc(100% / 6 - 2.4%);
     margin: 0 2.4% 2.4% 0;
@@ -288,7 +306,7 @@
     border-top: solid 1px #ec008c;
     border-bottom: transparent;
     margin-right: -2vw;
-    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8 75%, #00a6e8 100%) 2;
+    border-image: linear-gradient(to right, #FFFFFF 75%, #ec008c 75%, #ec008c 100%) 2;
 }
 
 /* PORTFÓLIO */
