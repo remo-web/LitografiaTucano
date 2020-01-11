@@ -29,7 +29,8 @@
 .mdc-typography--caption,
 .mdc-typography--overline,
 .mdc-text-field__input,
-.mdc-floating-label {
+.mdc-floating-label,
+.mdc-chip {
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
 }
@@ -100,6 +101,11 @@
 .mdc-image-list .mdc-image-list__item:nth-child(20),
 .mdc-image-list .mdc-image-list__item:nth-child(24) {
     margin-right: 0;
+}
+
+/* CHIPS */
+.mdc-chip {
+    background-color: rgba(224,224,224,0.8);
 }
 
 /* DIALOGS */

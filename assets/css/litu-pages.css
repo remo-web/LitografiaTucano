@@ -133,6 +133,11 @@
     background-color: transparent;
 }
 
+.litu-pages--quem-somos__resultado {
+    background-color: white;
+    background-image: linear-gradient(to right, #FFFFFF 16.666%, #00a6e8 16.666%, #00a6e8 100%);
+}
+
 .litu-pages--quem-somos__presente .mdc-image-list .mdc-image-list__item {
     width: calc(100% / 6 - 2.4%);
     margin: 0 2.4% 2.4% 0;
