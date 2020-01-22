@@ -107,6 +107,11 @@
     margin-right: 0;
 }
 
+/* BUTTONS */
+.mdc-icon-button {
+    display: inline-flex;
+}
+
 /* CHIPS */
 .mdc-chip {
     background-color: rgba(224,224,224,0.8);

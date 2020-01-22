@@ -39,6 +39,15 @@
     padding: 0 1rem 8px;
 }
 
+.litu-card__over-image .litu-card__secondary{
+    padding-top: 1rem;
+}
+
+.litu-card__media-content__over-image{
+    display: flex;
+    align-items: flex-end;
+}
+
 /* ONIPRESENTES */
 
 /* menu */

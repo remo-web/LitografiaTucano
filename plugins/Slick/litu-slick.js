@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.litu-home--paraquem__marcas').slick({
-        slidesToShow: 4,
+        slidesToShow: 6,
         autoplay: true,
         autoplaySpeed: 2000,
         dots: false,

@@ -1,6 +1,12 @@
 
 $(function() {
     
+    $("#home-paraquem .mdc-card").hover(function (){
+        $(this).toggleClass("mdc-elevation--z0");
+        $(this).toggleClass("mdc-elevation--z7");
+        $(".mdc-card__actions", this).toggleClass("litu-hide");
+    });
+    
     // ANO ATUAL
     var date = new Date();
     var year = date.getFullYear();

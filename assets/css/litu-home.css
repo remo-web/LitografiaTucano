@@ -141,7 +141,8 @@
 }
 
 #home-paraquem .mdc-fab--mini {
-    background-color: #fff200;
+    background-color: #FFFFFF;
+    border-radius: 100%;
 }
 
 .litu-home--paraquem__titulo h2{
@@ -155,12 +156,66 @@
     border-image: linear-gradient(to right, #fff200 25%, #FFFFFF 25%, #FFFFFF 100%) 2;
 }
 
-#home-paraquem .mdc-image-list .mdc-image-list__image{
+.litu-home--paraquem__marcas{
+    display: flex;
+}
+
+#home-paraquem .litu-card{
+    display: inline-block;
+    width: calc(82vw / 3 - var(--mdc-layout-grid-margin-desktop, 24px));
+    transition: all 0.5s ease;
+}
+
+#home-paraquem .litu-card .mdc-chip-set {
+    padding: 0;
+}
+
+#home-paraquem .mdc-card__media {
+    min-width: calc(82vw / 3 - var(--mdc-layout-grid-margin-desktop, 24px));
+    background-size: cover;
+    background-position: center;
+}
+
+#home-paraquem .litu-card__media__bobs{
+    background-image: url(../img/home/clientes/remow_litu-bobs--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__yoggi{
+    background-image: url(../img/home/clientes/remow_litu-yoggi--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__koni{
+    background-image: url(../img/home/clientes/remow_litu-koni--foto.jpg);
+}
+
+#home-paraquem .mdc-card__actions {
+    margin-left: auto;
+    padding: 0.5rem;
+}
+
+#home-paraquem .fa-facebook-f,
+#home-paraquem .fa-instagram,
+#home-paraquem .fa-link {
+    color: white;
+    background: transparent;
+}
+
+
+#home-paraquem .mdc-image-list__image{
     border-radius: 1.6vw 0.4vw;
 }
 
-.litu-home--paraquem__marcas{
-    display: flex;
+.litu-home--paraquem__marcas .mdc-image-list__image {
+    filter: grayscale(100%);
+    opacity: 0.2;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+
+.litu-home--paraquem__marcas .mdc-image-list__image:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* END | PARA QUEM */
