@@ -262,14 +262,28 @@
 #home-sustentabilidade .mdc-card__primary-action {
     display: flex;
     flex-direction: row;
+    cursor: default;
 }
 
 #home-sustentabilidade .mdc-card__media {
-    width: 110px;
+    min-width: 110px;
+    background-size: contain;
 }
 
 .litu-home--sustentabilidade__reciclagem .mdc-card__media {
     background-image: url(../img/home/sustentabilidade/remow_litu-img--sustentabilidade__reciclagem.svg);
+}
+
+.litu-home--sustentabilidade__tintas .mdc-card__media {
+    background-image: url(../img/home/sustentabilidade/remow_litu-img--sustentabilidade__tintas.svg);
+}
+
+.litu-home--sustentabilidade__papel .mdc-card__media {
+    background-image: url(../img/home/sustentabilidade/remow_litu-img--sustentabilidade__papel.svg);
+}
+
+.litu-home--sustentabilidade__floresta .mdc-card__media {
+    background-image: url(../img/home/sustentabilidade/remow_litu-img--sustentabilidade__floresta.svg);
 }
 
 #home-sustentabilidade .mdc-fab--mini {

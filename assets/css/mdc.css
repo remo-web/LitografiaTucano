@@ -73,6 +73,10 @@
     margin-top: -1.2em;
 }
 
+.mdc-typography--headline6 + .mdc-typography--body2{
+    margin-top: -0.61em;
+}
+
 .mdc-layout-grid__inner{
     width: 100%;
 }
