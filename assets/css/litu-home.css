@@ -236,6 +236,14 @@
 
 /* SUSTENTABILIDADE */
 
+#home-sustentabilidade {
+    background-color: rgba(0,0,0,0.12);
+    background-image: url(../img/home/sustentabilidade/remow_litu-img--sustentabilidade__bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+}
+
 #home-sustentabilidade .mdc-layout-grid__inner {
     margin: 15vh 0 20vh 0;
 }
@@ -245,6 +253,23 @@
     text-align: left;
     border: solid 1px;
     border-image: linear-gradient(to right, #000000 25%, transparent 25%, transparent 100%) 2;
+}
+
+#home-sustentabilidade .mdc-card {
+    width: auto;
+}
+
+#home-sustentabilidade .mdc-card__primary-action {
+    display: flex;
+    flex-direction: row;
+}
+
+#home-sustentabilidade .mdc-card__media {
+    width: 110px;
+}
+
+.litu-home--sustentabilidade__reciclagem .mdc-card__media {
+    background-image: url(../img/home/sustentabilidade/remow_litu-img--sustentabilidade__reciclagem.svg);
 }
 
 #home-sustentabilidade .mdc-fab--mini {
