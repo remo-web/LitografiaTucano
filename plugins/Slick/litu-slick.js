@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $('.litu-home--paraquem--depoimento').slick({
+    $('.litu-home--paraquem__marcas').slick({
+        slidesToShow: 4,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 2000,
         dots: false,
         arrows: false,
     });
