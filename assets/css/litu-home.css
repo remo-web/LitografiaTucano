@@ -181,6 +181,10 @@
     background-position: center;
 }
 
+#home-paraquem .mdc-card__primary-action {
+    cursor: default;
+}
+
 #home-paraquem .litu-card__media__bobs{
     background-image: url(../img/home/clientes/remow_litu-bobs--foto.jpg);
 }
@@ -235,7 +239,7 @@
 }
 
 .litu-home--paraquem__marcas .mdc-image-list__image {
-    filter: grayscale(100%);
+/*    filter: grayscale(100%);*/
     opacity: 0.2;
     transform: scale(0.9);
     transition: all 0.5s ease;
