@@ -160,10 +160,15 @@
     display: flex;
 }
 
-#home-paraquem .litu-card{
+#home-paraquem .litu-card,
+#home-paraquem .litu-card__slick {
     display: inline-block;
     width: calc(82vw / 3 - var(--mdc-layout-grid-margin-desktop, 24px));
     transition: all 0.5s ease;
+}
+
+#home-paraquem .slick-list {
+/*    overflow: visible;*/
 }
 
 #home-paraquem .litu-card .mdc-chip-set {
@@ -180,12 +185,36 @@
     background-image: url(../img/home/clientes/remow_litu-bobs--foto.jpg);
 }
 
-#home-paraquem .litu-card__media__yoggi{
-    background-image: url(../img/home/clientes/remow_litu-yoggi--foto.jpg);
+#home-paraquem .litu-card__media__wollner{
+    background-image: url(../img/home/clientes/remow_litu-wollner--foto.jpg);
 }
 
 #home-paraquem .litu-card__media__koni{
     background-image: url(../img/home/clientes/remow_litu-koni--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__atelier{
+    background-image: url(../img/home/clientes/remow_litu-atelier--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__aladdin{
+    background-image: url(../img/home/clientes/remow_litu-aladdin--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__spoleto{
+    background-image: url(../img/home/clientes/remow_litu-spoleto--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__yoggi{
+    background-image: url(../img/home/clientes/remow_litu-yoggi--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__mrcat{
+    background-image: url(../img/home/clientes/remow_litu-mrcat--foto.jpg);
+}
+
+#home-paraquem .litu-card__media__yuca{
+    background-image: url(../img/home/clientes/remow_litu-yuca--foto.jpg);
 }
 
 #home-paraquem .mdc-card__actions {
