@@ -283,8 +283,8 @@
 .litu-home--portfolio__mais{
     position: absolute;
     z-index: 1;
-    height: 90%;
-    margin-top: -5vh;
+    height: calc(100% - 102px);
+/*    margin-top: -5vh;*/
     text-align: center;
 }
 

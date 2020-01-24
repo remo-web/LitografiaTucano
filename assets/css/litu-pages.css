@@ -319,6 +319,26 @@
     
 }
 
+/* NOVO */
+
+#pages-portfolio .litu-pages--head {
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 999;
+}
+
+#pages-portfolio .litu-pages--head .mdc-button {
+    width: calc(100% / 7 - 3px);
+}
+
+#pages-portfolio .litu-pages--content .mdc-layout-grid__inner {
+    margin-top: calc(84px + var(--mdc-layout-grid-margin-desktop, 24px));
+}
+
+/* NOVO */
+
 #pages-portfolio .litu-pages--head p {
     white-space: nowrap;
     max-width: 66.666vw;
