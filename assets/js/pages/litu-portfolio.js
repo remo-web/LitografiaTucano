@@ -1,75 +1,50 @@
-$(function() {
-    
-    $( '.mdc-card__media' ).hover( function() {
-        $(this).children( '.mdc-card__media-content' ).children( '.litu-pages--portfolio__head__item' ).toggleClass( 'animated flipInX litu-hide' );
+filterSelection("all")
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+}
+
+function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+}
+
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("mdc-button");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("mdc-elevation--z7");
+        current[0].className = current[0].className.replace(" mdc-elevation--z7", "");
+        this.className += " mdc-elevation--z7";
     });
+}
+
+
+$(function() {
 
     // LightGallery
     lightGallery(document.querySelector( '.lightgallery' )); 
-    
-    // Exibir Portfolio
-    $( '.litu-pages--head--menu__tudo' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .tudo' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .tudo' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
-    $( '.litu-pages--head--menu__alimentacao' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .alimentacao' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .alimentacao' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
-    $( '.litu-pages--head--menu__corporativo' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .corporativo' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .corporativo' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
-    $( '.litu-pages--head--menu__moda' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .moda' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .moda' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
-    $( '.litu-pages--head--menu__promocional' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .promocional' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .promocional' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
-    $( '.litu-pages--head--menu__varejo' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .varejo' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .varejo' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
-    $( '.litu-pages--head--menu__diversos' ).on( 'click', function() {
-        $( '#portfolio-galeria .litu-pages--portfolio__galeria__text' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria li' ).addClass( 'litu-hide' );
-        $( '#portfolio-galeria .diversos' ).toggleClass( 'litu-hide' );
-        $( '#portfolio-galeria .diversos' ).toggleClass( 'animated fadeInUp' );
-        setTimeout( function() {
-            $( '#portfolio-galeria li' ).removeClass( 'animated fadeInUp' );
-        }, 4000);
-    });
 
 });
