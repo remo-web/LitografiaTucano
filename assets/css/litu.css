@@ -2,6 +2,10 @@
     display: none;
 }
 
+.litu-opacity {
+    opacity: 0;
+}
+
 .litu-show{
     visibility: visible;
 }
@@ -54,32 +58,33 @@
     align-items: flex-end;
 }
 
+.litu-button__group > .mdc-fab,
+.litu-button__group > .mdc-button {
+    margin: 0 0.25em 0.5em 0;
+}
+
 /* ONIPRESENTES */
 
 /* menu */
 .litu-menu {
     position: fixed; 
-/*    
-    top: calc(100vw / 24); left: calc(100% / 24);
-    padding-left: var(--mdc-layout-grid-margin-desktop, 24px);
-    padding-right: var(--mdc-layout-grid-margin-desktop, 24px);
-    padding-top: var(--mdc-layout-grid-margin-desktop, 24px);
-*/
     z-index: 2;
-    width: calc(100% / 24); max-width: calc(100% / 24); height: 100%;
-    background-color: black;
+    width: calc(100% / 24); max-width: calc(100% / 24); 
+    height: 100%;
     background-image: url(../img/remow_litu-img--menu__bg.jpg);
     background-size: cover;
     background-position: center;
+    transition: all 1s ease;
 }
-.litu-menu__logo {
-    height: auto;
-    background-color: transparent !important;
-    padding: 
-        calc(var(--mdc-layout-grid-margin-desktop, 24px) * .5) 
-        0 
-        calc(var(--mdc-layout-grid-margin-desktop, 24px) * 1.5) 
-        0;
+
+.litu-menu__hover {
+    width: auto; max-width: 100%;
+    transition: all 1s ease;
+}
+
+.litu-menu--social,
+.litu-menu ul {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #menu-nav {
@@ -87,11 +92,55 @@
 }
 
 .litu-menu .mdc-list-item {
-    height: calc(100vh / 13);
+    height: calc(80vh / 8);
+    padding-right: 32px;
 }
 
 .litu-menu .mdc-list-item i {
     color: white;
+}
+
+.litu-menu .mdc-list-item__graphic {
+    margin-right: auto;
+}
+
+.litu-menu .mdc-list-item__graphic__hover {
+    margin-right: 32px;
+}
+
+.litu-menu--social {
+    height: calc(20vh - 32px);
+    padding: 16px;
+}
+
+.litu-menu--social a {
+    transition: all .5s ease;
+}
+
+.litu-menu--social * {
+    color: white;
+}
+
+.litu-menu--social__linkedin {
+    background-color: #0e76a8;
+}
+
+.litu-menu--social__facebook {
+    background-color: #3b5998;
+}
+
+.litu-menu--social__instagram {
+    background-color: #833ab4;
+    background-image: -webkit-linear-gradient(-135deg, #833ab4, #fd1d1d, #fcb045);
+    background-image: linear-gradient(-135deg, #fcb045, #fd1d1d, #833ab4);
+}
+
+.litu-menu--social__pinterest {
+    background-color: #e60023;
+}
+
+.litu-menu--social__whatsapp {
+    background-color: #25D366 !important;
 }
 
 #menu-social {
