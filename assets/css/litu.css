@@ -11,6 +11,12 @@
     object-position: center;
 }
 
+.litu-icon__outlined{
+    color: transparent !important;
+    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-color: var(--mdc-theme-background);
+}
+
 /* MDC */
 .litu-card {
     margin: 0 0.6vw 0.6vw 0;
@@ -53,29 +59,18 @@
 /* menu */
 .litu-menu {
     position: fixed; 
-/*    top: calc(100vw / 24); left: calc(100% / 24); */
+/*    
+    top: calc(100vw / 24); left: calc(100% / 24);
     padding-left: var(--mdc-layout-grid-margin-desktop, 24px);
     padding-right: var(--mdc-layout-grid-margin-desktop, 24px);
     padding-top: var(--mdc-layout-grid-margin-desktop, 24px);
+*/
     z-index: 2;
-    width: calc(100% / 6); height: 100%;
-    background-image: 
-        linear-gradient(
-            to right,
-            hsl(0, 0%, 100%) 0%,
-            hsla(0, 0%, 100%, 0.738) 19%,
-            hsla(0, 0%, 100%, 0.541) 34%,
-            hsla(0, 0%, 100%, 0.382) 47%,
-            hsla(0, 0%, 100%, 0.278) 56.5%,
-            hsla(0, 0%, 100%, 0.194) 65%,
-            hsla(0, 0%, 100%, 0.126) 73%,
-            hsla(0, 0%, 100%, 0.075) 80.2%,
-            hsla(0, 0%, 100%, 0.042) 86.1%,
-            hsla(0, 0%, 100%, 0.021) 91%,
-            hsla(0, 0%, 100%, 0.008) 95.2%,
-            hsla(0, 0%, 100%, 0.002) 98.2%,
-            hsla(0, 0%, 100%, 0) 100%
-        );
+    width: calc(100% / 24); max-width: calc(100% / 24); height: 100%;
+    background-color: black;
+    background-image: url(../img/remow_litu-img--menu__bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .litu-menu__logo {
     height: auto;
@@ -87,32 +82,15 @@
         0;
 }
 
-.litu-menu__logo img {
-    width: 100%; height: auto;
-}
-
 #menu-nav {
     margin: 0; padding: 0;
 }
 
-.litu-menu .mdc-typography--button {
-    font-size: .8rem; 
-/*    font-weight: 600;*/
+.litu-menu .mdc-list-item {
+    height: calc(100vh / 13);
 }
 
-.litu-menu__menu {
-    min-width: 0;
-    width: fit-content;
-    margin-bottom: 0.4rem;
-    border-radius: 2px;
-}
-
-.litu-menu__menu#menu-contato,
-.litu-menu__menu#menu-wa {
-    display: inline-flex;
-}
-
-.litu-menu__menu .fa-whatsapp{
+.litu-menu .mdc-list-item i {
     color: white;
 }
 
