@@ -92,8 +92,15 @@
 }
 
 .litu-menu .mdc-list-item {
+    height: calc(100vh / 8);
+    padding-right: 16px;
+    transition: all .5s ease;
+}
+
+.litu-menu .mdc-list-item__hover {
     height: calc(80vh / 8);
     padding-right: 32px;
+    transition: all .5s ease;
 }
 
 .litu-menu .mdc-list-item i {
@@ -101,11 +108,11 @@
 }
 
 .litu-menu .mdc-list-item__graphic {
-    margin-right: auto;
+    margin: auto;
 }
 
 .litu-menu .mdc-list-item__graphic__hover {
-    margin-right: 32px;
+    margin: 0 32px 0 0;
 }
 
 .litu-menu--social {
