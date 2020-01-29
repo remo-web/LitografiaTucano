@@ -100,6 +100,7 @@
 .litu-menu .mdc-list-item__hover {
     height: calc(80vh / 8);
     padding-right: 32px;
+    padding-left: 32px;
     transition: all .5s ease;
 }
 
@@ -117,7 +118,7 @@
 
 .litu-menu--social {
     height: calc(20vh - 32px);
-    padding: 16px;
+    padding: 32px;
 }
 
 .litu-menu--social a {
