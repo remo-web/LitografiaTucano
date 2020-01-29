@@ -47,14 +47,7 @@ $(function() {
 
 });
 
-$(window).on('scroll',function() {
-    if ($(this).scrollTop() < 200) {
-        menuOpen();
-    }
-    else if ($(this).scrollTop() >= 200) {
-        menuClose();
-    }
-});
+
 
 //$( document ).scroll(function () {
 //    if ($( document ).scrollTop() === 0) {
