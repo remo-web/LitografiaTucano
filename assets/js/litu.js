@@ -14,6 +14,15 @@ function menuClose() {
     $( ".litu-menu .mdc-list-item").removeClass( "mdc-list-item__hover" );
 };
 
+$(window).on('scroll',function() {
+    if ($(this).scrollTop() < 200) {
+        menuOpen();
+    }
+    else if ($(this).scrollTop() >= 200) {
+        menuClose();
+    }
+});
+
 $(function() {
     
     $( ".litu-menu" ).hover( function() {
@@ -26,34 +35,9 @@ $(function() {
         }
     });
     
-//    $( ".litu-menu" ).hover( function lituOver() {
-//        $( ".litu-menu__menu .mdc-typography--button").toggleClass( "litu-hide" );
-//        $( ".mdc-list-item__graphic" ).toggleClass( "mdc-list-item__graphic__hover" );
-//        $( ".litu-menu" ).toggleClass( "litu-menu__hover mdc-elevation--z2 mdc-elevation--z6" );
-//        $( ".litu-menu--social a" ).toggleClass( "litu-opacity" );
-//        $( ".litu-menu .mdc-list-item").toggleClass( "mdc-list-item__hover" );
-//    }, function lituOut() {
-//        $( ".litu-menu__menu .mdc-typography--button").toggleClass( "litu-hide" );
-//        $( ".mdc-list-item__graphic" ).toggleClass( "mdc-list-item__graphic__hover" );
-//        $( ".litu-menu" ).toggleClass( "litu-menu__hover mdc-elevation--z2 mdc-elevation--z6" );
-//        $( ".litu-menu--social a" ).toggleClass( "litu-opacity" );
-//        $( ".litu-menu .mdc-list-item").toggleClass( "mdc-list-item__hover" );
-//    });
-    
     // ANO ATUAL
     var date = new Date();
     var year = date.getFullYear();
     document.getElementById("year").innerHTML = year;
 
 });
-
-
-
-//$( document ).scroll(function () {
-//    if ($( document ).scrollTop() === 0) {
-//        menuOpen();
-//    }
-//    else {
-//        menuClose();
-//    }
-//});

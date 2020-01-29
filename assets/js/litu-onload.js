@@ -1,16 +1,7 @@
 window.onload = function() {
     
     menuOpen();
-    
-    $(window).on('scroll',function() {
-        if ($(this).scrollTop() < 200) {
-            menuOpen();
-        }
-        else if ($(this).scrollTop() >= 200) {
-            menuClose();
-        }
-    });
-    
+
     // Anime Text
     var h = window.location.pathname;
     if (h.length === 0 || h === "/" || h.match(/^\/?index/))
