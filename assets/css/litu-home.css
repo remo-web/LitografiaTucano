@@ -239,16 +239,24 @@
 }
 
 .litu-home--paraquem__marcas .mdc-image-list__image {
-/*    filter: grayscale(100%);*/
-    opacity: 0.2;
-    transform: scale(0.9);
+    -webkit-filter: drop-shadow( 0px 0px 0px rgba(0, 0, 0, .1));
+            filter: drop-shadow( 0px 0px 0px rgba(0, 0, 0, .1));
+    transform: scale(0.8);
     transition: all 0.5s ease;
 }
 
 .litu-home--paraquem__marcas .mdc-image-list__image:hover {
-    filter: grayscale(0);
+    -webkit-filter: drop-shadow( 8px 8px 6px rgba(0, 0, 0, .2));
+            filter: drop-shadow( 8px 8px 6px rgba(0, 0, 0, .2));
     opacity: 1;
     transform: scale(1);
+}
+
+.litu-home--paraquem__marcas .mdc-image-list__image:active {
+    -webkit-filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, .4));
+            filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, .4));
+    opacity: 1;
+    transform: scale(0.9);
 }
 
 /* END | PARA QUEM */
@@ -283,6 +291,7 @@
 .litu-home--portfolio__mais{
     position: absolute;
     z-index: 1;
+    height: 100%;
     height: calc(100% - 102px);
 /*    margin-top: -5vh;*/
     text-align: center;

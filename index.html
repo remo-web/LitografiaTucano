@@ -252,130 +252,8 @@
         
         <!-- MENU -->
         <div class="mdc-elevation--z2 litu-menu"
-             id="menu">
-            <ul class="mdc-list"
-                id="menu-nav">
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-home litu-icon__outlined fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Início
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#home-quemsomos">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-users litu-icon__outlined fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Quem Somos
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#home-inovacao">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-lightbulb litu-icon__outlined fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Inovação
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#home-paraquem">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-suitcase litu-icon__outlined fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Para Quem
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#home-portfolio">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-image litu-icon__outlined fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Portfólio
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#home-sustentabilidade">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-recycle fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Sustentabilidade
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu"
-                   href="#footer-contato"
-                   id="menu-contato">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-envelope litu-icon__outlined fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Contato
-                    </span>
-                </a>
-                <a class="mdc-list-item litu-menu__menu litu-dialog--open"
-                   href="#"
-                   id="menu-orcamento">
-                    <span class="mdc-list-item__graphic">
-                        <i class="fas fa-dollar-sign fa-lg"></i>
-                    </span>
-                    <span class="mdc-typography--button mdc-theme--text-secondary-on-dark litu-hide">
-                        Orçamento
-                    </span>
-                </a>
-            </ul>
-            <div class="litu-menu--social litu-button__group">
-                <a class="mdc-button mdc-button--raised litu-menu--social__whatsapp litu-opacity"
-                   href="https://wa.me/"
-                   target="_blank"
-                   title="WhatsApp">
-                    <span class="mdc-button__icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </span>
-                    <span class="mdc-button__label mdc-typography--button">
-                        WhatsApp
-                    </span>
-                </a>
-                <br />
-                <a class="mdc-fab mdc-fab--mini litu-menu--social__linkedin litu-opacity"
-                   href="https://www.linkedin.com/company/litografia-tucano"
-                   target="_blank"
-                   title="LinkedIn">
-                    <span class="mdc-fab__icon">
-                        <i class="fab fa-linkedin-in fa-xs"></i>
-                    </span>
-                </a>
-                <a class="mdc-fab mdc-fab--mini litu-menu--social__instagram litu-opacity"
-                   href="https://instagram.com/litografiatucano"
-                   target="_blank"
-                   title="Instagram">
-                    <span class="mdc-fab__icon">
-                        <i class="fab fa-instagram fa-xs"></i>
-                    </span>
-                </a>
-                <a class="mdc-fab mdc-fab--mini litu-menu--social__facebook litu-opacity"
-                   href="https://facebook.com/Litografiatucano/"
-                   target="_blank"
-                   title="Facebook">
-                    <span class="mdc-fab__icon">
-                        <i class="fab fa-facebook-f fa-xs"></i>
-                    </span>
-                </a>
-                <a class="mdc-fab mdc-fab--mini litu-menu--social__pinterest litu-opacity"
-                   href="https://br.pinterest.com/litografiatucano/"
-                   target="_blank"
-                   title="Pinterest">
-                    <span class="mdc-fab__icon">
-                        <i class="fab fa-pinterest-p fa-xs"></i>
-                    </span>
-                </a>
-            </div>
+             id="menu"
+             w3-include-html="assets/html/menu.html">
         </div>
         
         <!-- HEAD -->
@@ -393,41 +271,39 @@
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-7">
-<!--
-                    <button class="mdc-button mdc-button--outlined mdc-typography--button">
-                        <span class="mdc-button__label">Portfólio</span>
-                    </button>
--->
-                    <h1 class="mdc-typography--headline1 mdc-theme--text-primary-on-dark lax"
+                    <h2 class="mdc-typography--headline1 mdc-theme--text-primary-on-dark lax"
                         data-lax-preset="fadeInOut">
-                        <span class="litu-home--head__titulo1" style="display: none">
+                        <span class="litu-home--head__titulo1"
+                              style="display: none">
                             <span class="text-wrapper">
                                 <span class="letters">
                                     DESIGN DE EMBALAGENS
                                 </span>
                             </span>
                         </span>
-                    </h1>
-                    <h1 class="mdc-typography--headline1 mdc-theme--text-primary-on-dark lax"
+                    </h2>
+                    <h2 class="mdc-typography--headline1 mdc-theme--text-primary-on-dark lax"
                         data-lax-preset="fadeInOut">
-                        <span class="litu-home--head__titulo2" style="display: none">
+                        <span class="litu-home--head__titulo2"
+                              style="display: none">
                             <span class="text-wrapper">
                                 <span class="letters">
                                     TRADIÇÃO
                                 </span>
                             </span>
                         </span>
-                    </h1>
-                    <h1 class="mdc-typography--headline1 mdc-theme--text-primary-on-dark lax"
+                    </h2>
+                    <h2 class="mdc-typography--headline1 mdc-theme--text-primary-on-dark lax"
                         data-lax-preset="fadeInOut">
-                        <span class="litu-home--head__titulo3" style="display: none">
+                        <span class="litu-home--head__titulo3"
+                              style="display: none">
                             <span class="text-wrapper">
                                 <span class="letters">
                                     Atendimento Personalizado
                                 </span>
                             </span>
                         </span>
-                    </h1>
+                    </h2>
                     <p class="mdc-typography--subtitle2 mdc-theme--text-secondary-on-dark lax"
                        data-lax-preset="fadeInOut">
                           Nossa intenção é que nossos clientes sejam atendidos como em nenhuma outra gráfica.
@@ -449,6 +325,10 @@
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 litu-home--quemsomos__titulo">
                     <h1 class="mdc-typography--headline2 lax"
                         data-lax-preset="delay fadeInOut">
+<!--
+                        <img class="litu-tucano"
+                             src="assets/img/remow_litu-img--icon__full-color.svg" />
+-->
                         QUEM SOMOS
                         <hr class="lax"
                             data-lax-preset="delay driftRight" />
@@ -1010,72 +890,80 @@
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__1.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__2.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__3.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__4.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__5.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__6.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__7.jpg">
+                                     src="">
                             </div>
                         </a>
                         <a class="mdc-image-list__item"
                            href="#"
                            target="_self">
                             <div class="mdc-image-list__image-aspect-container">
-                                <img class="mdc-image-list__image lax"
+                                <img alt=""
+                                     class="mdc-image-list__image lax"
                                      data-lax-preset="zoomOut-1.1"
-                                     src="assets/img/home/portfolio/remow_litu-img--home--portfolio__8.jpg">
+                                     src="">
                             </div>
                         </a>
                     </ul>
@@ -1088,7 +976,7 @@
              id="home-sustentabilidade">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--align-middle litu-home--sustentabilidade__titulo">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-layout-grid__cell--align-middle litu-home--sustentabilidade__titulo">
                     <h1 class="mdc-typography--headline2 lax"
                         data-lax-preset="delay fadeInOut">
                         Sustentabilidade
@@ -1096,7 +984,7 @@
                             data-lax-preset="delay driftRight" />
                     </h1>
                 </div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
                     <p class="mdc-typography--body1 mdc-theme--text-primary-on-light lax"
@@ -1380,6 +1268,10 @@
     <script src="https://cdn.jsdelivr.net/npm/lax.js"
             type="text/javascript">
     </script>
+    
+    <!-- Include -->
+    <script src="plugins/include.js"></script>
+    <script>includeHTML();</script>
     
     <!-- MDC -->
     <script type="text/javascript">

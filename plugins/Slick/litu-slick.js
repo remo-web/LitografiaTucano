@@ -24,7 +24,7 @@ $(document).ready(function(){
         arrows: false,
     });
     $('.litu-home--paraquem__marcas').slick({
-        slidesToShow: 8,
+        slidesToShow: 6,
         autoplay: true,
         autoplaySpeed: 1000,
         dots: false,

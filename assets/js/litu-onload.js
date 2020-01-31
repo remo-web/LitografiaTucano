@@ -29,4 +29,70 @@ window.onload = function() {
         }, 1500, 'swing');
     };
     
+    // GALERIA PORTFÓLIO HOME
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(1) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 1),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(2) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 3),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(3) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 5),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(4) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 7),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(5) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 9),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(6) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 11),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(7) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 13),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
+    $('#home-portfolio .mdc-image-list__item:nth-child(8) .mdc-image-list__image').each(function() {
+        var num = Math.floor((Math.random() * 2) + 15),
+            img = $(this);
+        
+        img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
+        img.attr('alt', 'Src: ' + img.attr('src'));
+    });
+    
 };

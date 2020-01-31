@@ -65,6 +65,34 @@
 
 /* ONIPRESENTES */
 
+/* TUCANO VOADOR */
+h1::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/assets/img/remow_litu-img--icon__full-color.svg);
+    background-repeat: no-repeat;
+    height: 1.2em; width: 1.2em;
+    margin-bottom: -.25em;
+    background-color: white;
+    border-radius: 100%;
+    background-size: 65%;
+    background-position: center;
+}
+
+h2 .letters:before {
+    content: "";
+    display: inline-block;
+    background-image: url(/assets/img/remow_litu-img--icon__full-color.svg);
+    background-repeat: no-repeat;
+    height: .8em; width: .8em;
+    margin-bottom: -.05em;
+    background-color: white;
+    border-radius: 100%;
+    background-size: 65%;
+    background-position: center;
+}
+/* TUCANO VOADOR */
+
 /* menu */
 .litu-menu {
     position: fixed; 
