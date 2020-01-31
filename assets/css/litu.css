@@ -96,7 +96,8 @@ h2 .letters:before {
 /* menu */
 .litu-menu {
     position: fixed; 
-    z-index: 2;
+    top: 0;
+    z-index: 99;
     width: calc(100% / 24); max-width: calc(100% / 24); 
     height: 100%;
     background-image: url(../img/remow_litu-img--menu__bg.jpg);

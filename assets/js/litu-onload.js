@@ -1,6 +1,10 @@
 window.onload = function() {
     
     menuOpen();
+    
+    if (window.location.href.indexOf("portfolio") > -1) {
+        menuClose();
+    }
 
     // Anime Text
     var h = window.location.pathname;

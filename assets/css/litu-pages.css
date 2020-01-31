@@ -326,7 +326,7 @@
     top: 0;
     height: auto;
     width: 100%;
-    z-index: 999;
+    z-index: 9;
 }
 
 #pages-portfolio .litu-pages--head .mdc-button {
@@ -361,6 +361,10 @@
     }
 
 #pages-portfolio #portfolio-galeria ul li p {
+    margin: 1rem;
+}
+
+#pages-portfolio #portfolio-galeria ul li p:first-child {
     font-family: 'Permanent Marker', cursive;
     line-height: normal;
 }
