@@ -321,6 +321,10 @@
 
 /* NOVO */
 
+#pages-portfolio .mdc-top-app-bar {
+    background-color: #fff200;
+}
+
 #pages-portfolio .mdc-top-app-bar .mdc-button {
     width: calc(100% / 7);
 }
