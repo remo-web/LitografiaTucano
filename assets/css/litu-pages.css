@@ -321,16 +321,8 @@
 
 /* NOVO */
 
-#pages-portfolio .litu-pages--head {
-    position: fixed;
-    top: 0;
-    height: auto;
-    width: 100%;
-    z-index: 9;
-}
-
-#pages-portfolio .litu-pages--head .mdc-button {
-    width: calc(100% / 7 - 3px);
+#pages-portfolio .mdc-top-app-bar .mdc-button {
+    width: calc(100% / 7);
 }
 
 #pages-portfolio .litu-pages--content .mdc-layout-grid__inner {
@@ -360,11 +352,16 @@
         display: list-item;
     }
 
-#pages-portfolio #portfolio-galeria ul li p {
+.litu-pages--portfolio__galeria__text {
+    pointer-events: none;
+}
+
+.litu-pages--portfolio__galeria__text h5,
+.litu-pages--portfolio__galeria__text p {
     margin: 1rem;
 }
 
-#pages-portfolio #portfolio-galeria ul li p:first-child {
+.litu-pages--portfolio__galeria__text p:first-child {
     font-family: 'Permanent Marker', cursive;
     line-height: normal;
 }
@@ -376,9 +373,11 @@
     max-width: 66.666vw;
 }
 
+/*
 .litu-pages--portfolio__galeria__text {
     margin-bottom: 4vh;
 }
+*/
 
 .litu-pages--head__nav .mdc-card {
     border: solid 0px var(--mdc-theme-primary);

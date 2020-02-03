@@ -245,11 +245,10 @@
         </div>
              
         <!-- HEAD -->
-        <div class="mdc-layout-grid litu-pages--head">
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-11"
-                     id="myBtnContainer">
+        <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" 
+                         id="myBtnContainer">
                     <button class="mdc-button mdc-button--raised"
                             onclick="filterSelection('acoplados')">
                         <div class="mdc-button__ripple"></div>
@@ -292,16 +291,16 @@
                             Outros
                         </span>
                     </button>
-                    <button class="mdc-button mdc-button--raised"
-                            onclick="filterSelection('all')">
+                    <button class="mdc-button mdc-button--raised mdc-elevation--z7"
+                            onclick="filterSelection('tudo')">
                         <div class="mdc-button__ripple"></div>
                         <span class="mdc-button__label mdc-typography--button">
                             Ver Tudo
                         </span>
                     </button>
-                </div>
+                </section>
             </div>
-        </div>
+        </header>
         
         <!-- CONTEÚDO -->
         <div class="mdc-layout-grid litu-pages--content">
@@ -585,7 +584,7 @@
                     
                     <!-- fotos -->
                     <ul class="mdc-image-list litu-image-list mdc-image-list--with-text-protection lightgallery">
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv">
+                        <li class="mdc-image-list__item litu-pages--portfolio__galeria__text animated fadeInUp filterDiv tudo">
                             <p class="mdc-typography--headline5 mdc-theme--text-hint-on-light">
                                 <i class="fas fa-arrow-alt-circle-up"></i>
                                 <br />
@@ -593,18 +592,91 @@
                             </p>
                             <h1 class="mdc-typography--headline2"></h1>
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas">
-                            <p class="mdc-typography--headline5 mdc-theme--text-hint-on-light">
+                        <li class="mdc-image-list__item litu-pages--portfolio__galeria__text animated fadeInUp filterDiv caixas">
+                            <p class="mdc-typography--headline6 mdc-theme--text-hint-on-light">
                                 <i class="fas fa-arrow-alt-circle-up"></i>
-                                <br />
-                                Selecione a categoria.
+                                Veja outras categorias
                             </p>
+                            <h5 class="mdc-typography--headline5 mdc-theme--text-secondary-on-light">
+                                CAIXAS
+                            </h5>
                             <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">
                                 Personalizadas, versárteis e resistentes. Produzimos caixas em cartão, kraft e microndulados, com diversos tipos de acabamentos internos e externos, formatos e impressão inteiramente adequados a suas demandas.
                             </p>
                             <h1 class="mdc-typography--headline2"></h1>
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas"
+                        
+                        <!-- Acoplados -->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo acoplados"
+                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-1.jpg"
+                            data-sub-html=".caption-acoplados-1">
+                            <a href="">
+                                <img class="mdc-image-list__image"
+                                     src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-1__thumb.jpg">
+                                <div class="lg-poster">
+                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
+                                </div>
+                            </a>
+                            <div class="caption-sacolas-1"
+                                 style="display:none">
+                                <h4>MegaMatte</h4>
+                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                            </div> 
+                        </li>
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo acoplados"
+                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-2.jpg"
+                            data-sub-html=".caption-acoplados-2">
+                            <a href="">
+                                <img class="mdc-image-list__image"
+                                     src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-2__thumb.jpg">
+                                <div class="lg-poster">
+                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
+                                </div>
+                            </a>
+                            <div class="caption-acoplados-2"
+                                 style="display:none">
+                                <h4>MegaMatte</h4>
+                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                            </div> 
+                        </li>
+<!--
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo acoplados"
+                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-3.jpg"
+                            data-sub-html=".caption-acoplados-3">
+                            <a href="">
+                                <img class="mdc-image-list__image"
+                                     src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-3__thumb.jpg">
+                                <div class="lg-poster">
+                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
+                                </div>
+                            </a>
+                            <div class="caption-acoplados-3"
+                                 style="display:none">
+                                <h4>Koni</h4>
+                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                            </div> 
+                        </li>
+-->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo acoplados"
+                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-4.jpg"
+                            data-sub-html=".caption-acoplados-4">
+                            <a href="">
+                                <img class="mdc-image-list__image"
+                                     src="../assets/img/portfolio/remow_litu-img--portfolio__acoplados-4__thumb.jpg">
+                                <div class="lg-poster">
+                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
+                                </div>
+                            </a>
+                            <div class="caption-acoplados-4"
+                                 style="display:none">
+                                <h4>Bob's</h4>
+                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                            </div> 
+                        </li>
+                        
+                        <!-- Caixas -->
+<!--
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo caixas"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-1.jpg"
                             data-sub-html=".caption-caixas-1">
                             <a href="">
@@ -620,7 +692,8 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas"
+-->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo caixas"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-2.jpg"
                             data-sub-html=".caption-caixas-2">
                             <a href="">
@@ -636,7 +709,7 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas"
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo caixas"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-3.jpg"
                             data-sub-html=".caption-caixas-3">
                             <a href="">
@@ -652,7 +725,7 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas"
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo caixas"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-4.jpg"
                             data-sub-html=".caption-caixas-4">
                             <a href="">
@@ -668,7 +741,7 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas"
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo caixas"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-5.jpg"
                             data-sub-html=".caption-caixas-5">
                             <a href="">
@@ -684,23 +757,9 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv caixas"
-                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-6.jpg"
-                            data-sub-html=".caption-caixas-6">
-                            <a href="">
-                                <img class="mdc-image-list__image"
-                                     src="../assets/img/portfolio/remow_litu-img--portfolio__caixas-6__thumb.jpg">
-                                <div class="lg-poster">
-                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
-                                </div>
-                            </a>
-                            <div class="caption-caixas-6"
-                                 style="display:none">
-                                <h4>Bob's</h4>
-                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
-                            </div> 
-                        </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv catalogos"
+                        
+                        <!-- Catálogos -->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo catalogos"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__catalogos-1.jpg"
                             data-sub-html=".caption-catalogos-1">
                             <a href="">
@@ -716,7 +775,7 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv catalogos"
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo catalogos"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__catalogos-2.jpg"
                             data-sub-html=".caption-catalogos-1">
                             <a href="">
@@ -732,7 +791,9 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv folheteria"
+                        
+                        <!-- Folheteria -->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo folheteria"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__folheteria-1.jpg"
                             data-sub-html=".caption-folheteria-1">
                             <a href="">
@@ -748,7 +809,9 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv sacolas"
+                        
+                        <!-- Sacolas -->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo sacolas"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__sacolas-1.jpg"
                             data-sub-html=".caption-sacolas-1">
                             <a href="">
@@ -764,7 +827,9 @@
                                 <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv outros"
+                        
+                        <!-- Outros -->
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo outros"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__outros-1.jpg"
                             data-sub-html=".caption-outros-1">
                             <a href="">
@@ -774,13 +839,13 @@
                                     <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
                                 </div>
                             </a>
-                            <div class="caption-sacolas-1"
+                            <div class="caption-outros-1"
                                  style="display:none">
-                                <h4>MegaMatte</h4>
-                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                                <h4>Brownie do Luiz</h4>
+                                <p>Display</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv outros"
+                        <li class="mdc-image-list__item animated fadeInUp filterDiv tudo outros"
                             data-src="../assets/img/portfolio/remow_litu-img--portfolio__outros-2.jpg"
                             data-sub-html=".caption-outros-2">
                             <a href="">
@@ -792,46 +857,14 @@
                             </a>
                             <div class="caption-outros-2"
                                  style="display:none">
-                                <h4>MegaMatte</h4>
-                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+                                <h4>Tio Donda</h4>
+                                <p>cachorro quente</p>
                             </div> 
                         </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv outros"
-                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__outros-3.jpg"
-                            data-sub-html=".caption-outros-3">
-                            <a href="">
-                                <img class="mdc-image-list__image"
-                                     src="../assets/img/portfolio/remow_litu-img--portfolio__outros-3__thumb.jpg">
-                                <div class="lg-poster">
-                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
-                                </div>
-                            </a>
-                            <div class="caption-outros-3"
-                                 style="display:none">
-                                <h4>Koni</h4>
-                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
-                            </div> 
-                        </li>
-                        <li class="mdc-image-list__item animated fadeInUp filterDiv outros"
-                            data-src="../assets/img/portfolio/remow_litu-img--portfolio__outros-4.jpg"
-                            data-sub-html=".caption-outros-4">
-                            <a href="">
-                                <img class="mdc-image-list__image"
-                                     src="../assets/img/portfolio/remow_litu-img--portfolio__outros-4__thumb.jpg">
-                                <div class="lg-poster">
-                                    <i class="fas fa-expand fa-3x mdc-theme--text-primary-on-dark litu-pages--portfolio__expand"></i>
-                                </div>
-                            </a>
-                            <div class="caption-outros-4"
-                                 style="display:none">
-                                <h4>Bob's</h4>
-                                <p>A gorgeous Sunset tonight captured at Coniston Water....</p>
-                            </div> 
-                        </li>
+
                     </ul>
                     
                 </div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
             </div>
         </div>
         

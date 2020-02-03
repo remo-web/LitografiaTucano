@@ -29,4 +29,7 @@ $(function() {
 //        textField.layout();
     });
     
+    // topbar
+    const topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
+    
 });

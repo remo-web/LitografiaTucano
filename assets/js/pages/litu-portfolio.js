@@ -1,4 +1,4 @@
-filterSelection("all")
+filterSelection("tudo")
 function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("filterDiv");
