@@ -15,7 +15,10 @@ function menuClose() {
 };
 
 $(window).on('scroll',function() {
-    if (window.location.href.indexOf("portfolio") > -1) {
+    if (
+        window.location.href.indexOf("quem-somos") > -1 ||
+        window.location.href.indexOf("portfolio") > -1 ||
+        window.location.href.indexOf("inovacao") > -1) {
         menuClose();
     }
     else if ($(this).scrollTop() < 200) {
@@ -29,14 +32,20 @@ $(window).on('scroll',function() {
 $(function() {
     
     $( ".litu-menu" ).hover( function() {
-        if (window.location.href.indexOf("portfolio") > -1) {
+        if (
+            window.location.href.indexOf("quem-somos") > -1 ||
+            window.location.href.indexOf("portfolio") > -1 ||
+            window.location.href.indexOf("inovacao") > -1) {
             menuOpen();
         }
         else if ($(window).scrollTop() > 200) {
             menuOpen();
         }
     }, function() {
-        if (window.location.href.indexOf("portfolio") > -1) {
+        if (
+            window.location.href.indexOf("quem-somos") > -1 ||
+            window.location.href.indexOf("portfolio") > -1 ||
+            window.location.href.indexOf("inovacao") > -1) {
             menuClose();
         }
         else if ($(window).scrollTop() > 200) {

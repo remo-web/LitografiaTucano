@@ -67,7 +67,7 @@
 
 /* TUCANO VOADOR */
 h1:before {
-    content: " ";
+    content: "";
     display: inline-block;
     background-image: url(/assets/img/remow_litu-img--icon__full-color.svg);
     background-repeat: no-repeat;

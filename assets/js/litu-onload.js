@@ -2,7 +2,10 @@ window.onload = function() {
     
     menuOpen();
     
-    if (window.location.href.indexOf("portfolio") > -1) {
+    if (
+        window.location.href.indexOf("quem-somos") > -1 || 
+        window.location.href.indexOf("portfolio") > -1 || 
+        window.location.href.indexOf("inovacao") > -1) {
         menuClose();
     }
 

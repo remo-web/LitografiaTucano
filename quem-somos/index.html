@@ -237,80 +237,11 @@
         </div>
         
         <!-- MENU -->
-        <div class="litu-menu"
-             id="menu">
-            <a class="mdc-button litu-menu__logo"
-               href="../index.html">
-                <img src="../assets/img/remow_litu-img--icon__full-color.svg" />
-            </a>
-            <ul class="mdc-list mdc-list--dense"
-                id="menu-nav">
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="../#home-quemsomos">
-                    <span class="mdc-button__label mdc-typography--button">Quem Somos</span>
-                </a>
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="#home-inovacao">
-                    <span class="mdc-button__label mdc-typography--button">Inovação</span>
-                </a>
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="#home-paraquem">
-                    <span class="mdc-button__label mdc-typography--button">Clientes</span>
-                </a>
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="#home-portfolio">
-                    <span class="mdc-button__label mdc-typography--button">Portfólio</span>
-                </a>
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="#sustentabilidade">
-                    <span class="mdc-button__label mdc-typography--button">Sustentabilidade</span>
-                </a>
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="#footer-contato"
-                   id="menu-contato">
-                    <span class="mdc-button__label mdc-typography--button">Contato</span>
-                </a>
-                <a class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu"
-                   href="https://wa.me/"
-                   id="menu-wa">
-                    <i class="fab fa-whatsapp fa-sm"></i>
-                </a>
-                <button class="mdc-list-item mdc-button mdc-button--raised mdc-button--dense litu-menu__menu litu-dialog--open"
-                   id="menu-orcamento" style="background-color: white">
-                    <span class="mdc-button__label mdc-typography--button" style="color: green">Orçamento</span>
-                </button>
-            </ul>
-            <div class="mdc-card"
-                    id="menu-social">
-                <div class="mdc-card__actions">
-                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
-                       href="https://www.linkedin.com/company/litografia-tucano"
-                       target="_blank"
-                       title="LinkedIn">
-                        <i class="fab fa-linkedin-in fa-xs"></i>
-                    </button>
-                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
-                       href="https://instagram.com/litografiatucano"
-                       target="_blank"
-                       title="Instagram">
-                        <i class="fab fa-instagram fa-xs"></i>
-                    </button>
-                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
-                       href="https://facebook.com/Litografiatucano/"
-                       target="_blank"
-                       title="Facebook">
-                        <i class="fab fa-facebook-f fa-xs"></i>
-                    </button>
-                    <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
-                       href="https://br.pinterest.com/litografiatucano/"
-                       target="_blank"
-                       title="Pinterest">
-                        <i class="fab fa-pinterest-p fa-xs"></i>
-                    </button>
-                </div>
-            </div>
+        <div class="mdc-elevation--z2 litu-menu"
+             id="menu"
+             w3-include-html="../assets/html/menu.html">
         </div>
-                             
+        
         <!-- HEAD -->
         <div class="mdc-layout-grid litu-pages--head"
              id="pages-quem-somos">
@@ -435,7 +366,10 @@
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9">
+                    <h3 class="mdc-typography--headline5 mdc-theme--text-secondary-on-light">
+                        Nossos Principais Fornecedores 
+                    </h3>
                     <ul class="mdc-image-list">
                         <a class="mdc-image-list__item"
                            href="https://www.heidelberg.com/"
@@ -478,11 +412,13 @@
             </div>
             <div class="mdc-layout-grid__inner litu-pages--quem-somos__resultado">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7">
-                    <h3 class="mdc-typography--headline3 mdc-theme--text-primary-on-dark">
-                        Materiais que Produzimos
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+                    <h3 class="mdc-typography--headline4 mdc-theme--text-primary-on-dark">
+                        O Que Produzimos
                     </h3>
+                    <p class="mdc-typography--subtitle1 mdc-theme--text-secondary-on-dark">
+                        Materiais gráficos em geral, sob demanda, com infinitas alternativas de personalização, tanto em relação a impressão, medidas, facas e montagens.
+                    </p>
                     <div class="mdc-chip-set mdc-typography"
                          role="grid">
                         <div class="mdc-chip"
@@ -653,7 +589,7 @@
                     </div>
                     <br />
                 </div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+<!--                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>-->
             </div>
         </div>
                 
@@ -801,12 +737,14 @@
     </script>
     
     <!-- Slick -->
+<!--
     <script src="../plugins/Slick/slick.min.js"
             type="text/javascript">
     </script>
     <script src="../plugins/Slick/litu-slick.js"
             type="text/javascript">
     </script>
+-->
     
     <!-- Anime Text -->
 <!--
@@ -819,6 +757,7 @@
 -->
     
     <!-- Light Gallery -->
+<!--
     <script src="../plugins/LightGallery/litu-lightgallery.js"
             type="text/javascript">
     </script>
@@ -838,11 +777,16 @@
     <script src="../plugins/LightGallery/js/lg-hash.min.js"
             type="text/javascript">
     </script>
+-->
     
     <!-- LAX Parallax -->
     <script src="https://cdn.jsdelivr.net/npm/lax.js"
             type="text/javascript">
-    </script>
+    </script>    
+    
+    <!-- Include -->
+    <script src="../plugins/include.js"></script>
+    <script>includeHTML();</script>
     
     <!-- MDC -->
     <script type="text/javascript">

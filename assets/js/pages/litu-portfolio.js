@@ -41,10 +41,16 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
-
 $(function() {
 
     // LightGallery
-    lightGallery(document.querySelector( '.lightgallery' )); 
-
+    lightGallery(document.querySelector( '.lightgallery' ));
+    
+    // change # on click
+//    $('button').click(function(event) {
+//        event.preventDefault();
+//        window.location.hash = this.hash;
+//        $($(this).attr('value'));
+//    });
+    
 });

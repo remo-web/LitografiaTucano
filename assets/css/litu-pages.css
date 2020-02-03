@@ -14,6 +14,9 @@
     border: solid 1px;
 }
 
+.litu-pages--content h2,
+.litu-pages--content h3,
+.litu-pages--content h4,
 .litu-pages--head p {
     text-align: right;
 }
@@ -133,14 +136,17 @@
     background-color: transparent;
 }
 
-.litu-pages--quem-somos__resultado {
-    background-color: white;
-    background-image: linear-gradient(to right, #FFFFFF 16.666%, #00a6e8 16.666%, #00a6e8 100%);
+.litu-pages--quem-somos__passado__content hr {
+    border-top: solid 1px #00a6e8;
+    border-bottom: transparent;
+    margin-right: -2vw;
+    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8 75%, #00a6e8 100%) 2;
 }
 
 .litu-pages--quem-somos__presente .mdc-image-list .mdc-image-list__item {
     width: calc(100% / 6 - 2.4%);
     margin: 0 2.4% 2.4% 0;
+    text-align: center;
 }
 
 .litu-pages--quem-somos__presente .mdc-image-list .mdc-image-list__item:nth-child(6),
@@ -156,15 +162,15 @@
     width: 75%;
 }
 
-.litu-pages--quem-somos__passado__content h3 {
-    text-align: right;
+.litu-pages--quem-somos__resultado .mdc-layout-grid__cell--span-10 {
+    background-color: #00a6e8;
+    text-align: left;
+    margin: 0 calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    padding: 0 var(--mdc-layout-grid-margin-desktop, 24px);
 }
 
-.litu-pages--quem-somos__passado__content hr {
-    border-top: solid 1px #00a6e8;
-    border-bottom: transparent;
-    margin-right: -2vw;
-    border-image: linear-gradient(to right, #FFFFFF 75%, #00a6e8 75%, #00a6e8 100%) 2;
+.litu-pages--quem-somos__resultado h3 {
+    text-align: left;
 }
 
 /* INOVAÇÃO */
@@ -303,10 +309,6 @@
     width: 75%;
 }
 
-.litu-pages--inovacao__passado__content h3 {
-    text-align: right;
-}
-
 .litu-pages--inovacao__passado__content hr {
     border-top: solid 1px #ec008c;
     border-bottom: transparent;
@@ -315,9 +317,7 @@
 }
 
 /* PORTFÓLIO */
-#pages-portfolio {
-    
-}
+#pages-portfolio {}
 
 /* NOVO */
 
@@ -377,12 +377,6 @@
     max-width: 66.666vw;
 }
 
-/*
-.litu-pages--portfolio__galeria__text {
-    margin-bottom: 4vh;
-}
-*/
-
 .litu-pages--head__nav .mdc-card {
     border: solid 0px var(--mdc-theme-primary);
 }
@@ -402,22 +396,10 @@
     text-align: center;
 }
 
-/*
-i.fa-angle-double-down.litu-pages--portfolio__head__item {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff200;
-}
-*/
-
 i.litu-pages--portfolio__head__item {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--mdc-theme-primary);
-}
-
-.litu-pages--portfolio__galeria__text .mdc-button--unelevated {
-/*    background-color: var(--mdc-theme-primary);*/
 }
 
 .litu-pages--portfolio__galeria__text .mdc-button:last-child, 
@@ -425,26 +407,6 @@ i.litu-pages--portfolio__head__item {
     color: var(--mdc-theme-primary);
     border: none;
 }
-/*
-
-#pages-portfolio .litu-pages--head p {
-    max-width: 25vw;
-    justify-content: flex-end;
-    margin-left: auto;
-}
-
-#pages-portfolio .litu-pages--head li.mdc-list-item {
-    height: auto;
-}
-
-#pages-portfolio .litu-pages--head .mdc-list-item {
-    height: 1.2em;
-    margin-right: -16px;
-    text-align: right;
-    justify-content: flex-end;
-    color: #fff200;
-}
-*/
 
 #pages-portfolio.litu-pages--head .mdc-fab--mini {
     background-color: #fff200;
@@ -465,9 +427,3 @@ i.litu-pages--portfolio__head__item {
     width: 100%;
     text-align: center;
 }
-
-/*
-.litu-pages--portfolio__galeria .litu-feather {
-    color: white;
-    stroke-width: 2;
-}*/
