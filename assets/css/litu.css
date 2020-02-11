@@ -79,6 +79,7 @@ h1:before {
     background-position: center;
 }
 
+/*
 h2 .letters:before {
     content: "";
     display: inline-block;
@@ -91,6 +92,7 @@ h2 .letters:before {
     background-size: 65%;
     background-position: center;
 }
+*/
 /* TUCANO VOADOR */
 
 /* menu */
