@@ -14,6 +14,10 @@
     border: solid 1px;
 }
 
+.litu-pages--content h2:first-of-type {
+    text-align: center;
+}
+
 .litu-pages--content h2,
 .litu-pages--content h3,
 .litu-pages--content h4,
@@ -45,9 +49,22 @@
     background-color: black
 }
 
-#pages-quem-somos.litu-pages--head {
+#pages-quem-somos.litu-pages--head:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+/*    width: 100vw; height: 100vh;*/
     background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);
+    filter: grayscale(100%);
     background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+#pages-quem-somos.litu-pages--head {
+/*    background-image: url(../img/quem-somos/remow_litu-img--quem-somos__bg.jpg);*/
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.6);
 }
 
 #pages-quem-somos .litu-pages--head h1 > hr {
