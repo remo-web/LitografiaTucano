@@ -29,7 +29,7 @@ $(window).on('scroll',function() {
     }
 });
 
-$(function() {
+function lituHome() {
     
     $( ".litu-menu" ).hover( function() {
         if (
@@ -58,4 +58,4 @@ $(function() {
     var year = date.getFullYear();
     document.getElementById("year").innerHTML = year;
 
-});
+};
