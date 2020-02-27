@@ -39,7 +39,7 @@ window.onload = function() {
     // GALERIA PORTFÓLIO HOME
     
     $('#home-portfolio .mdc-image-list__item:nth-child(1) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 1),
+        var num = Math.floor((Math.random() * 3) + 1),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -47,7 +47,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(2) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 3),
+        var num = Math.floor((Math.random() * 3) + 4),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -55,7 +55,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(3) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 5),
+        var num = Math.floor((Math.random() * 3) + 7),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -63,7 +63,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(4) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 7),
+        var num = Math.floor((Math.random() * 3) + 10),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -71,7 +71,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(5) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 9),
+        var num = Math.floor((Math.random() * 3) + 13),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -79,7 +79,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(6) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 11),
+        var num = Math.floor((Math.random() * 3) + 16),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -87,7 +87,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(7) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 13),
+        var num = Math.floor((Math.random() * 3) + 19),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
@@ -95,7 +95,7 @@ window.onload = function() {
     });
     
     $('#home-portfolio .mdc-image-list__item:nth-child(8) .mdc-image-list__image').each(function() {
-        var num = Math.floor((Math.random() * 2) + 15),
+        var num = Math.floor((Math.random() * 3) + 22),
             img = $(this);
         
         img.attr('src', 'assets/img/home/portfolio/remow_litu-img--home--portfolio__' + num + '.jpg');
