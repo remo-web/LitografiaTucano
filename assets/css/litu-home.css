@@ -290,11 +290,13 @@
 
 .litu-home--portfolio__mais{
     position: absolute;
-    z-index: 1;
-    height: 100%;
-    height: calc(100% - 102px);
+    z-index: 1 !important;
+    width: 100%;
+/*    height: 100%;*/
+/*    height: calc(100% - 102px);*/
 /*    margin-top: -5vh;*/
     text-align: center;
+    margin-top: -102px;
 }
 
 .litu-home--portfolio__mais button,
