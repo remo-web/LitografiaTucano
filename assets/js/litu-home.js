@@ -1,5 +1,4 @@
-
-$(function() {
+function lituHome() {
     
     $("#home-paraquem .mdc-card").hover(function (){
         $(this).toggleClass("mdc-elevation--z0");
@@ -13,4 +12,4 @@ $(function() {
     document.getElementById("year").innerHTML = year;
     document.getElementById("quemsomos-year").innerHTML = year;
 
-});
+};

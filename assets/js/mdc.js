@@ -1,4 +1,4 @@
-$(function() {
+function lituMDC() {
     
     //ripple
     var btnRipples = document.querySelectorAll('.mdc-button');
@@ -30,6 +30,8 @@ $(function() {
     });
     
     // topbar
-    const topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
+    if ( window.location.pathname.indexOf('invt') >= 0 ) {
+        const topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
+    }
     
-});
+};

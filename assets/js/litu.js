@@ -29,7 +29,7 @@ $(window).on('scroll',function() {
     }
 });
 
-function lituHome() {
+function lituHomeMenu() {
     
     $( ".litu-menu" ).hover( function() {
         if (

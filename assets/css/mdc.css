@@ -53,6 +53,13 @@
     margin-top: -2.4em;
 }
 
+
+.mdc-typography--headline4 + .mdc-typography--subtitle1,
+.mdc-typography--headline4 + .mdc-typography--subtitle2,
+.mdc-typography--headline4 + .mdc-typography--caption{
+    margin-top: -1.8em;
+}
+
 .mdc-typography--headline6 + .mdc-typography--subtitle1,
 .mdc-typography--headline6 + .mdc-typography--subtitle2,
 .mdc-typography--headline6 + .mdc-typography--caption{

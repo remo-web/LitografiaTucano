@@ -24,5 +24,7 @@ function includeHTML() {
             return;
         }
     }
+    lituHomeMenu();
     lituHome();
+    lituMDC();
 }

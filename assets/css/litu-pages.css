@@ -161,7 +161,7 @@
 }
 
 .litu-pages--quem-somos__presente .mdc-image-list .mdc-image-list__item {
-    width: calc(100% / 6 - 2.4%);
+    width: calc(100% / 6 - 2.0%);
     margin: 0 2.4% 2.4% 0;
     text-align: center;
 }
@@ -303,9 +303,27 @@
     background-color: transparent;
 }
 
+/*
 .litu-pages--inovacao__resultado {
     background-color: white;
     background-image: linear-gradient(to right, #FFFFFF 16.666%, #ec008c 16.666%, #ec008c 100%);
+}
+*/
+
+.litu-pages--inovacao__resultado .mdc-layout-grid__cell--span-10 {
+    background-color: #ec008c;
+    text-align: left;
+    margin: 0 calc(var(--mdc-layout-grid-margin-desktop, 24px) * -1);
+    padding: 0 var(--mdc-layout-grid-margin-desktop, 24px);
+}
+
+.litu-pages--inovacao__resultado h3 {
+    text-align: left;
+}
+
+.litu-pages--inovacao__resultado button {
+    background-color: white !important;
+    color: #ec008c !important;
 }
 
 .litu-pages--inovacao__presente .mdc-image-list .mdc-image-list__item {
