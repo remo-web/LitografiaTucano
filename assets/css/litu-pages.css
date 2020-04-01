@@ -361,7 +361,7 @@
 }
 
 #pages-portfolio .mdc-top-app-bar .mdc-button {
-    width: calc(100% / 7);
+    width: calc(100% / 5);
 }
 
 #pages-portfolio .litu-pages--content .mdc-layout-grid__inner {
