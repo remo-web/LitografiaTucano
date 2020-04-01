@@ -151,6 +151,7 @@
 .litu-pages--quem-somos__passado,
 .litu-pages--quem-somos__presente {
     background-color: transparent;
+    text-align: right;
 }
 
 .litu-pages--quem-somos__passado__content hr {
@@ -301,6 +302,7 @@
 .litu-pages--inovacao__passado,
 .litu-pages--inovacao__presente {
     background-color: transparent;
+    text-align: right;
 }
 
 /*

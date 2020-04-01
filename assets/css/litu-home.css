@@ -59,7 +59,7 @@
     transform: translateX(50%)
 }
 
-#home-quemsomos .mdc-fab--mini {
+#home-quemsomos .mdc-button {
     background-color: #00a6e8;
 }
 
@@ -90,7 +90,7 @@
     margin: 15vh 0 20vh 0;
 }
 
-#home-inovacao .mdc-fab--mini {
+#home-inovacao .mdc-button {
     background-color: #ec008c;
 }
 
@@ -298,12 +298,12 @@
     margin-top: calc(-102px - 15vh);
 }
 
-.litu-home--portfolio__mais button,
+.litu-home--portfolio__mais a,
 .litu-home--portfolio__mais h3{
     display: inline-flex;
 }
 
-#home-portfolio .mdc-fab--mini {
+#home-portfolio .mdc-button {
     background-color: #fff200;
 }
 
