@@ -22,29 +22,19 @@
 }
 
 /* Tooltip */
-.tooltip {
-/*
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;  If you want dots under the hoverable text 
-*/
-}
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    color: #fff;
+    width: auto;
+    height: auto;
+    background-color: darkgrey;
     text-align: center;
-    padding: 15px 10px;
+    padding: 0px 10px;
     border-radius: 6px;
     position: absolute;
-/*
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-*/
     z-index: 1;
 }
 
