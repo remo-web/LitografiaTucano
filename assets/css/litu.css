@@ -125,7 +125,7 @@ h2 .letters:before {
     z-index: 99;
     width: calc(100% / 24); max-width: calc(100% / 24); 
     height: 100%;
-    background-image: url(../img/remow_litu-img--menu__bg.jpg);
+/*    background-image: url(../img/remow_litu-img--menu__bg.jpg);*/
     background-size: cover;
     background-position: center;
     transition: all 1s ease;
@@ -138,7 +138,7 @@ h2 .letters:before {
 
 .litu-menu--social,
 .litu-menu ul {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .95);
 }
 
 #menu-nav {
